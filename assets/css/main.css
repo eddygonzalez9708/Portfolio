@@ -2,19 +2,19 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
 
 
-/* Icon (alt) */
+/* Initial Setup Start */
 
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+html, body, div, span, object, iframe, h1, 
+h2, h3, h4, h5, h6, p, blockquote, pre, a, 
+abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, s, samp, small, strong, 
+sub, sup, var, b, u, i, center, dl, dt, dd, 
+ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, 
+td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, 
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -64,20 +64,9 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
-input, select, textarea {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
-}
+/* Inital Setup End */ 
 
-/* Basic */
-
-@media screen and (max-width: 480px) {
-	html, body {
-		min-width: 320px;
-	}
-}
+/* Main Setup Start */ 
 
 html {
 	box-sizing: border-box;
@@ -104,15 +93,14 @@ html {
 
 body {
 	height: 100%;
-	background-color: #ffffff;
-	background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(125, 100, 150, 0.5) 5%, rgba(0, 100, 100, 0.35)), url("../../images/brookly_bridge.jpg");
-	background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(125, 100, 150, 0.5) 5%, rgba(0, 100, 100, 0.35)), url("../../images/brookly_bridge.jpg");
-	background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(125, 100, 150, 0.5) 5%, rgba(0, 100, 100, 0.35)), url("../../images/brookly_bridge.jpg");
-	background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(125, 100, 150, 0.5) 5%, rgba(0, 100, 100, 0.35)), url("../../images/brookly_bridge.jpg");
+	background-image: url("images/overlay.png"), url("../../images/brookly_bridge.jpg");
+	background-image: url("images/overlay.png"), url("../../images/brookly_bridge.jpg");
+	background-image: url("images/overlay.png"), url("../../images/brookly_bridge.jpg");
+	background-image: url("images/overlay.png"), url("../../images/brookly_bridge.jpg");
 	background-repeat: repeat, no-repeat, no-repeat;
 	background-size: 100px 100px, cover, cover;
 	background-position: top left, center center, bottom center;
-	background-attachment: fixed, fixed,fixed;
+	background-attachment: fixed, fixed, fixed;
 }
 
 body:after {
@@ -125,14 +113,14 @@ body:after {
 	height: inherit;
 	opacity: 0;
 	z-index: 1;
-	background-color: #ffffff;
-	background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(125, 100, 150, 0.5) 5%, rgba(0, 100, 100, 0.35));
-	background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(125, 100, 150, 0.5) 5%, rgba(0, 100, 100, 0.35));
-	background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(125, 100, 150, 0.5) 5%, rgba(0, 100, 100, 0.35));
-	background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(125, 100, 150, 0.5) 5%, rgba(0, 100, 100, 0.35));
-	background-repeat: repeat,			no-repeat;
+	background-color: #000;
+	background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(125, 100, 150, 0.5), rgba(0, 100, 100, 0.35));
+	background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(125, 100, 150, 0.5), rgba(0, 100, 100, 0.35));
+	background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(125, 100, 150, 0.5), rgba(0, 100, 100, 0.35));
+	background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(125, 100, 150, 0.5), rgba(0, 100, 100, 0.35));
+	background-repeat: repeat, no-repeat;
 	background-size: 100px 100px, cover;
-	background-position: top left,		center center;
+	background-position: top left, center center;
 	-moz-transition: opacity 1.75s ease-out;
 	-webkit-transition: opacity 1.75s ease-out;
 	-ms-transition: opacity 1.75s ease-out;
@@ -143,30 +131,15 @@ body.is-preload:after {
 	opacity: 1;
 }
 
-/* Type */
-
 body, input, select, textarea {
 	color: #414f57;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
-	font-size: 14pt;
+	font-size: 14px;
 	font-weight: 300;
 	line-height: 2;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 }
-
-@media screen and (max-width: 1680px) {
-	body, input, select, textarea {
-		font-size: 11pt;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	body, input, select, textarea {
-		font-size: 10pt;
-			line-height: 1.75;
-		}
-	}
 
 a {
 	-moz-transition: color 0.2s ease, border-color 0.2s ease;
@@ -237,11 +210,6 @@ h6 {
 	font-size: 1em;
 }
 
-@media screen and (max-width: 480px) {
-	h1 {
-		font-size: 1.65em;
-	}
-}
 
 	sub {
 		font-size: 0.8em;
@@ -1035,3 +1003,28 @@ h6 {
 .links {
 	padding: 0;
 }
+
+@media screen and (max-width: 480px) {
+	html, body {
+		min-width: 320px;
+	}
+}
+
+@media screen and (max-width: 1680px) {
+	body, input, select, textarea {
+		font-size: 11pt;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	body, input, select, textarea {
+		font-size: 10pt;
+			line-height: 1.75;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		h1 {
+			font-size: 1.65em;
+		}
+	}
