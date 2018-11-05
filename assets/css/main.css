@@ -133,11 +133,11 @@ body.is-preload:after {
 
 body, input, select, textarea {
 	color: #414f57;
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-family: monospace;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 2;
-	letter-spacing: 0.2em;
+	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 
@@ -730,7 +730,7 @@ button:disabled,
 	opacity: 0.5;
 }
 
-#main {
+#main, #about {
 	-moz-transform-origin: 50% 50%;
 	-webkit-transform-origin: 50% 50%;
 	-ms-transform-origin: 50% 50%;
@@ -780,12 +780,21 @@ button:disabled,
 	background: #c8cccf;
 }
 
-body.is-preload #main {
+body.is-preload #main, body.is-preload #about {
 	-moz-transform: rotateX(15deg);
 	-webkit-transform: rotateX(15deg);
 	-ms-transform: rotateX(15deg);
 	transform: rotateX(15deg);
 	opacity: 0;
+}
+
+#about p {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+	text-align: justify;
+	text-transform: initial;
 }
 
 #footer {
@@ -897,7 +906,7 @@ body.is-ie #wrapper {
 }
 
 @media screen and (max-width: 480px) {
-	#main {
+	#main, #about {
 		padding: 4em 2em 2.5em 2em ;
 		width: 100%;
 	}

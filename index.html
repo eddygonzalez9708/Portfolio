@@ -10,43 +10,69 @@
 			<link rel="stylesheet" href="./assets/css/noscript.css" />
 		</noscript>
 	</head>
+
 	<body class="is-preload">
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar">
-								<img src="./images/eddy.jpg" alt="" />
-							</span>
-							<h1>Edward Gonzalez</h1>
-							<p>Software Engineer</p>
-						</header>
-						<footer>
-							<ul class="links">
-								<li><a href="#">About</a></li>
-								<li><a href="#">Projects</a></li>
-								<li><a href="#">Experience</a></li>
-								<li><a href="./images/Edward_Gonzalez_Resume.pdf">Resume</a></li>
-								<li><a href="#">Contact</a></li>
-							</ul>
-						</footer>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright icons">
-							<li><a href="#" class="fa-twitter">Twitter</a></li>
-							<li><a href="https://www.linkedin.com/in/edward-gonzalez-it" class="fa-linkedin">LinkedIn</a></li>
-							<li><a href="https://github.com/eddygonzalez9708" class="fa-github">GitHub</a></li>
+				<section id="main">
+					<header>
+						<span class="avatar">
+							<img src="./images/eddy.jpg" alt="Picture of Edward Gonzalez" />
+						</span>
+						<h1>Edward Gonzalez</h1>
+						<p>Software Engineer</p>
+					</header>
+					<footer>
+						<ul class="links">
+							<li><a href="#about">About</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#experience">Experience</a></li>
+							<li><a href="./images/Edward_Gonzalez_Resume.pdf">Resume</a></li>
+							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</footer>
+				</section>
+
+				<br /> <!-- Remove this br tag once you implement routes -->
+
+				<section id="about"> 
+					<!-- About -->
+					<h1>About</h1>
+					<p>Hello! I am Edward, a Software Engineer currently based in New York City.</p>
+						
+					<p>Throughout my career, I have enjoyed many experiences working in the IT industry. As a former IT Instructor at Per Scholas, 
+						I helped prepare students from underrepresented communities for their first technical job. As a Technician at Google, I was 
+						fortunate to work with some of the most talented Technicians and Engineers the world has to offer. However, as I continued 
+						to progress in my career and learn new technologies, I decided to shift my area of focus to Full-Stack Web Development and 
+						Software Engineering.</p>
+						
+					<p>As a Software Engineer, I enjoy applying my skills and knowledge of Full-Stack Web Development and Computer Science to build 
+						attractive and dynamic user interfaces that enhance productivity and provide a better online presence for companies.</p>
+							
+					<p>When I am not working on a project, I use my spare time to learn more about popular libraries, frameworks, and other 
+					programming languages.</p>
+							
+					<p>I am always excited to hear from former colleagues, managers or interesting creative people, so feel free to contact me if you 
+					would like to connect.</p>
+				</section>
+
+
+					
+				<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright icons">
+						<li><a href="#" class="fa-twitter">Twitter</a></li>
+						<li><a href="https://www.linkedin.com/in/edward-gonzalez-it" class="fa-linkedin">LinkedIn</a></li>
+						<li><a href="https://github.com/eddygonzalez9708" class="fa-github">GitHub</a></li>
+					</ul>
+				</footer>
 			</div>
 
 		<!-- Scripts -->
 			<script>
 				if ('addEventListener' in window) {
-					console.log('document', document.body.className)
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
