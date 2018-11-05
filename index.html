@@ -42,11 +42,11 @@
 					<h1>About</h1>
 					<p>Hello! I am Edward, a Software Engineer currently based in New York City.</p>
 						
-					<p>Throughout my career, I have enjoyed many experiences working in the IT industry. As a former IT Instructor at Per Scholas, 
-						I helped prepare students from underrepresented communities for their first technical job. As a Technician at Google, I was 
-						fortunate to work with some of the most talented Technicians and Engineers the world has to offer. However, as I continued 
-						to progress in my career and learn new technologies, I decided to shift my area of focus to Full-Stack Web Development and 
-						Software Engineering.</p>
+					<p>Throughout my career, I have enjoyed many experiences working in the Information Technology industry. As a former IT Instructor 
+						at Per Scholas, I helped prepare students from underrepresented communities for their first technical job. As a Technician at 
+						Google, I was fortunate to work with some of the most talented Technicians and Engineers the world has to offer. However, as 
+						I continued to progress in my career and learn new technologies, I decided to shift my area of focus to Full-Stack Web 
+						Development and Software Engineering.</p>
 						
 					<p>As a Software Engineer, I enjoy applying my skills and knowledge of Full-Stack Web Development and Computer Science to build 
 						attractive and dynamic user interfaces that enhance productivity and provide a better online presence for companies.</p>
@@ -58,7 +58,45 @@
 					would like to connect.</p>
 				</section>
 
+				<br>
 
+				<section id="projects">
+					<h1>Projects</h1>
+					<div class="project_heading">
+						<h2>Quizzer</h2>
+						<h2>In Progress</h2>
+					</div>
+					<p>Quizzer is a web application for teachers who wish to provide automated reminders and quizzes to their students emails.</p>
+					<p>Tech Stack: HTML, CSS, JavaScript, React, Bcrypt, Python, Django, GraphQL, JWT, Send Grid, Twilio, and Stripe.</p>
+					<div class="project_links">
+						<a href="https://quizzercs10.herokuapp.com">View Project</a>
+						<div class="dropdown">
+							<button onclick="dropDown('quizzer_content')">View Github <span class='arrow'>&#x25BC;</span></button>
+							<div id="quizzer_content" class="dropdown_content">
+								<a href="https://github.com/Lambda-School-Labs/CS10-quizzer">Front-End</a>
+								<a href="https://github.com/Lambda-School-Labs/CS10-quizzer/tree/master/client">Back-End</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="project_heading">
+						<h2>Lambda Notes</h2>
+						<h2>In Progress</h2>
+					</div>
+					<p>Lambda Notes is a note taking web application that allows users to create, view, edit and delete their 
+						notes online.</p>
+					<p>Tech Stack: HTML, CSS, JavaScript, React, Axios, Express, Cors, Helmet, Bcrypt, Morgan, Mongo DB, Mongoose and JWT.</p>
+					<div class="project_links">
+						<a href="https://lambda-notes-frontend.herokuapp.com">View Project</a>
+						<div class="dropdown">
+							<button onclick="dropDown('notes_content')">View Github <span class='arrow'>&#x25BC;</span></button>
+							<div id="notes_content" class="dropdown_content">
+								<a href="https://github.com/eddygonzalez9708/front-end-project-week">Front-End</a>
+								<a href="https://github.com/eddygonzalez9708/back-end-project-week">Back-End</a>
+							</div>
+						</div>
+					</div>
+				</section>
 					
 				<!-- Footer -->
 				<footer id="footer">
@@ -75,6 +113,10 @@
 				if ('addEventListener' in window) {
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+
+				function dropDown(github) {
+					document.getElementById(github).classList.toggle("show")
 				}
 			</script>
 	</body>
