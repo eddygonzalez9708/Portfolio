@@ -88,7 +88,7 @@
 					<div class="project_links">
 						<a href="https://lambda-notes-frontend.herokuapp.com">View Project</a>
 						<div class="dropdown">
-							<button class="dropbtn" onclick="dropDown('notes_content')">View Github <span class='arrow'>&#x25BC;</span></button>
+							<button class="dropbtn" onclick="dropDown('notes_content')">View Github <span class="arrow">&#x25BC;</span></button>
 							<div id="notes_content" class="dropdown_content">
 								<a href="https://github.com/eddygonzalez9708/front-end-project-week">Front-End</a>
 								<a href="https://github.com/eddygonzalez9708/back-end-project-week">Back-End</a>
@@ -119,8 +119,7 @@
 				}
 
 				window.onclick = function(event) {
-					if (!event.target.matches(".dropbtn")) {
-						console.log('Matches', event.target)
+					if (!event.target.matches(".dropbtn") && !event.target.matches(".arrow")) { 
 						let dropdowns = document.getElementsByClassName("dropdown_content")
 						for (let i = 0; i < dropdowns.length; i++) {
 							let openDropdown = dropdowns[i]
