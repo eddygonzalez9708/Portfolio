@@ -12,7 +12,6 @@
 	</head>
 
 	<body class="is-preload">
-
 		<!-- Wrapper -->
 			<div id="wrapper">
 				<!-- Main -->
@@ -71,7 +70,7 @@
 					<div class="project_links">
 						<a href="https://quizzercs10.herokuapp.com">View Project</a>
 						<div class="dropdown">
-							<button onclick="dropDown('quizzer_content')">View Github <span class='arrow'>&#x25BC;</span></button>
+							<button class="dropbtn" onclick="dropDown('quizzer_content')">View Github <span class='arrow'>&#x25BC;</span></button>
 							<div id="quizzer_content" class="dropdown_content">
 								<a href="https://github.com/Lambda-School-Labs/CS10-quizzer">Front-End</a>
 								<a href="https://github.com/Lambda-School-Labs/CS10-quizzer/tree/master/client">Back-End</a>
@@ -89,7 +88,7 @@
 					<div class="project_links">
 						<a href="https://lambda-notes-frontend.herokuapp.com">View Project</a>
 						<div class="dropdown">
-							<button onclick="dropDown('notes_content')">View Github <span class='arrow'>&#x25BC;</span></button>
+							<button class="dropbtn" onclick="dropDown('notes_content')">View Github <span class='arrow'>&#x25BC;</span></button>
 							<div id="notes_content" class="dropdown_content">
 								<a href="https://github.com/eddygonzalez9708/front-end-project-week">Front-End</a>
 								<a href="https://github.com/eddygonzalez9708/back-end-project-week">Back-End</a>
@@ -117,6 +116,19 @@
 
 				function dropDown(github) {
 					document.getElementById(github).classList.toggle("show")
+				}
+
+				window.onclick = function(event) {
+					if (!event.target.matches(".dropbtn")) {
+						console.log('Matches', event.target)
+						let dropdowns = document.getElementsByClassName("dropdown_content")
+						for (let i = 0; i < dropdowns.length; i++) {
+							let openDropdown = dropdowns[i]
+							if (openDropdown.classList.contains("show")) {
+								openDropdown.classList.remove("show")
+							}
+						}
+					}
 				}
 			</script>
 	</body>
