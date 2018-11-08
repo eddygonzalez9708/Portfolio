@@ -3,8 +3,12 @@
 	<head>
 		<title>Edward Gonzalez</title>
 		<meta charset='utf-8' />
-		<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no' />
-		<link rel='icon' href='./images/head.png' type='image/png' sizes='16x16'>
+		<meta name='viewport'content='width=device-width, initial-scale=1, user-scalable=no' />
+		<link 
+			rel='icon'
+			href='./images/head.png'
+			type='image/png'
+			sizes='16x16'>
 		<link rel='stylesheet' href='./assets/css/main.css' />
 		<noscript>
 			<link rel='stylesheet' href='./assets/css/noscript.css' />
@@ -26,17 +30,28 @@
 				</header>
 				<footer>
 					<ul class='links'>
-						<li><a href='#about'>About</a></li>
-						<li><a href='#projects'>Projects</a></li>
-						<li><a href='#experience'>Experience</a></li>
-						<li><a href='./images/Edward_Gonzalez_Resume.pdf'>Resume</a></li>
-						<li><a href='#contact'>Contact</a></li>
+						<li>
+							<a href='#about' alt='About Page Link'>About</a>
+						</li>
+						<li>
+							<a href='#projects' alt='Projects Page Link'>Projects</a>
+						</li>
+						<li>
+							<a href='#experience' alt='Experience Page Link'>Experience</a>
+						</li>
+						<li>
+							<a 
+								href='./images/Edward_Gonzalez_Resume.pdf'
+								alt='Resume Page Link'
+								target='_blank'>Resume</a>
+						</li>
+						<li>
+							<a href='mailto:edward.gonzalez9708@gmail.com'>Contact</a>
+						</li>
 					</ul>
 				</footer>
 			</div>
 			<!-- Home Section End -->
-
-			<br /> <!-- Remove this br tag once you implement routes -->
 
 			<!-- About Section Start -->
 			<section id='about'> 
@@ -58,8 +73,6 @@
 			</section>
 			<!-- About Section End-->
 
-			<br> <!-- Remove this br tag once you implement routes -->
-
 			<!-- Projects Section Start -->
 			<section id='projects'>
 				<h1>Projects</h1>
@@ -72,14 +85,14 @@
 				<p>Tech Stack: HTML, CSS, JavaScript, React, Bcrypt, Python, Django, GraphQL, JWT, Send Grid, 
 					Twilio, and Stripe.</p>
 				<div class='project-links'>
-					<a href='https://quizzercs10.herokuapp.com'>View Project</a>
+					<a href='https://quizzercs10.herokuapp.com' alt='Quizzer Website Link' target='_blank'>View Project</a>
 					<div class='dropdown'>
 						<button class='dropbtn' onclick='dropDown("quizzer")'>View Github 
 							<span class='arrow'>&#x25BC;</span>
 						</button>
 						<div id='quizzer' class='dropdown_content'>
-							<a href='https://github.com/Lambda-School-Labs/CS10-quizzer'>Front-End</a>
-							<a href='https://github.com/Lambda-School-Labs/CS10-quizzer/tree/master/client'>Back-End</a>
+							<a href='https://github.com/Lambda-School-Labs/CS10-quizzer' alt='Front-End Code for Quizzer' target='_blank'>Front-End</a>
+							<a href='https://github.com/Lambda-School-Labs/CS10-quizzer/tree/master/client' alt='Back-End Code for Quizzer' target='_blank'>Back-End</a>
 						</div>
 					</div>
 				</div>
@@ -106,13 +119,11 @@
 			</section>
 			<!-- Projects Section End -->
 
-			<br> <!-- Remove this br tag once you implement routes -->
-
 			<!-- Experience Section Start -->
 			<section id='experience'> 
 				<h1>Experience</h1>
 				<div class='heading'>
-					<a href='https://lambdaschool.com/' alt='Lambda School Logo'>
+					<a href='https://lambdaschool.com/' alt='Lambda School Logo' target='_blank'>
 						<img src='./images/lambda_logo.png' /> 
 					</a>
 					<h2>Remote</h2>

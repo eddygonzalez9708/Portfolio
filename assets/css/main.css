@@ -1,8 +1,9 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
 
-
-/* Initial Setup Start */
+*, *:before, *:after {
+	box-sizing: inherit;
+}
 
 html, body, div, span, h1, h2, p, blockquote, 
 a, img, ul, li, fieldset, form, label,
@@ -15,49 +16,14 @@ footer, header, nav, section {
 	vertical-align: baseline;
 }
 
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+
 body {
 	line-height: 1;
 	-webkit-text-size-adjust: none;
-}
-
-footer, header, section {
-	display: block;
-}
-
-ul {
-	list-style: none;
-}
-
-input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-}
-
-/* Inital Setup End */ 
-
-/* Main Setup Start */ 
-
-html {
-	box-sizing: border-box;
-}
-
-*, *:before, *:after {
-	box-sizing: inherit;
-}
-
-body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-	-moz-animation: none !important;
-	-webkit-animation: none !important;
-	-ms-animation: none !important;
-	animation: none !important;
-	-moz-transition: none !important;
-	-webkit-transition: none !important;
-	-ms-transition: none !important;
-	transition: none !important;
-}
-
-html {
-	height: 100%;
 }
 
 body {
@@ -70,6 +36,17 @@ body {
 	background-size: 100px 100px, cover, cover;
 	background-position: top left, center center, bottom center;
 	background-attachment: fixed, fixed, fixed;
+}
+
+body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+	-moz-animation: none !important;
+	-webkit-animation: none !important;
+	-ms-animation: none !important;
+	animation: none !important;
+	-moz-transition: none !important;
+	-webkit-transition: none !important;
+	-ms-transition: none !important;
+	transition: none !important;
 }
 
 body:after {
@@ -100,7 +77,7 @@ body.is-preload:after {
 	opacity: 1;
 }
 
-body, input, select, textarea {
+body, input {
 	color: #414f57;
 	font-family: monospace;
 	font-size: 14px;
@@ -108,6 +85,19 @@ body, input, select, textarea {
 	line-height: 2;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+}
+
+header, section, footer {
+	display: block;
+}
+
+ul {
+	list-style: none;
+}
+
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
 }
 
 a {
@@ -130,25 +120,17 @@ a:hover {
 	color: #B0C4DE;
 }
 
-strong, b {
-	color: #313f47;
-}
-
-em, i {
-	font-style: italic;
-}
-
 p {
 	margin: 0 0 1.5em 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
 	color: #313f47;
 	line-height: 1.5;
 	margin: 0 0 0.75em 0;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+h1 a, h2 a {
 	color: inherit;
 	text-decoration: none;
 }
@@ -161,40 +143,6 @@ h1 {
 
 h2 {
 	font-size: 1.25em;
-}
-
-h3 {
-	font-size: 1em;
-}
-
-h4 {
-	font-size: 1em;
-}
-
-h5 {
-	font-size: 1em;
-}
-
-h6 {
-	font-size: 1em;
-}
-
-sub {
-	font-size: 0.8em;
-	position: relative;
-	top: 0.5em;
-}
-
-sup {
-	font-size: 0.8em;
-	position: relative;
-	top: -0.5em;
-}
-
-hr {
-	border: 0;
-	border-bottom: solid 1px #c8cccf;
-	margin: 3em 0;
 }
 
 form {
@@ -253,9 +201,7 @@ label {
 input[type="text"],
 input[type="password"],
 input[type="email"],
-input[type="tel"],
-select,
-textarea {
+input[type="tel"] {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	-ms-appearance: none;
@@ -273,52 +219,21 @@ textarea {
 input[type="text"]:invalid,
 input[type="password"]:invalid,
 input[type="email"]:invalid,
-input[type="tel"]:invalid,
-select:invalid,
-textarea:invalid {
+input[type="tel"]:invalid {
 	box-shadow: none;
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
-input[type="tel"]:focus,
-select:focus,
-textarea:focus {
+input[type="tel"]:focusv {
 	border-color: #B0C4DE;
-}
-
-select {
-	background-size: 1.25rem;
-	background-repeat: no-repeat;
-	background-position: calc(100% - 1rem) center;
-	height: 2.75em;
-	padding-right: 2.75em;
-	text-overflow: ellipsis;
-}
-
-select option {
-	color: #313f47;
-	background: #ffffff;
-}
-
-select:focus::-ms-value {
-	background-color: transparent;
-}
-
-select::-ms-expand {
-	display: none;
 }
 
 input[type="text"],
 input[type="password"],
-input[type="email"],
-select {
+input[type="email"] {
 	height: 2.75em;
-}
-
-textarea {
-	padding: 0.75em 1em;
 }
 
 input[type="checkbox"],
@@ -431,13 +346,7 @@ input[type="radio"] + label:before {
 	display: none;
 }
 
-ol {
-	list-style: decimal;
-	margin: 0 0 1.5em 0;
-	padding-left: 1.25em;
-}
-
-ol li {
+li {
 	padding-left: 0.25em;
 }
 
@@ -464,19 +373,6 @@ ul.alt li {
 ul.alt li:first-child {
 	border-top: 0;
 	padding-top: 0;
-}
-
-dl {
-	margin: 0 0 1.5em 0;
-}
-
-dl dt {
-	display: block;
-	margin: 0 0 0.75em 0;
-}
-
-dl dd {
-	margin-left: 1.5em;
 }
 
 ul.actions {
@@ -968,7 +864,7 @@ body.is-ie #wrapper {
 }
 
 @media screen and (max-width: 880px) {
-	body, input, select, textarea {
+	body, input {
 		font-size: 14px;
 	}
 }
@@ -978,7 +874,7 @@ body.is-ie #wrapper {
 		min-width: 320px;
 	}
 
-	body, input, select, textarea {
+	body, input {
 		line-height: 1.75;
 	}
 
