@@ -1,12 +1,8 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
 
-*, *:before, *:after {
-	box-sizing: inherit;
-}
-
-html, body, div, span, h1, h2, p, blockquote, 
-a, img, ul, li, fieldset, form, label,
+html, body, div, span, h1, h2, p, a, 
+img, ul, li, fieldset, form, label,
 footer, header, nav, section {
 	border: 0;
 	font: inherit;
@@ -19,6 +15,10 @@ footer, header, nav, section {
 html {
 	box-sizing: border-box;
 	height: 100%;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
 }
 
 body {
@@ -49,6 +49,10 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 	transition: none !important;
 }
 
+body.is-preload:after {
+	opacity: 1;
+}
+
 body:after {
 	content: '';
 	display: block;
@@ -73,9 +77,6 @@ body:after {
 	transition: opacity 1.75s ease-out;
 }
 
-body.is-preload:after {
-	opacity: 1;
-}
 
 body, input {
 	color: #414f57;
@@ -704,7 +705,7 @@ body.is-preload #experience {
 	font-size: 11px;
 }
 
-.dropdown_content {
+.dropdown-content {
 	display: none;
 	background: #f1f1f1;
 	min-width: 160px;
@@ -712,14 +713,14 @@ body.is-preload #experience {
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.dropdown_content a {
+.dropdown-content a {
 	color: black;
 	padding: 2px;
 	margin: 0;
 	text-decoration: none;
 }
 
-.dropdown_content a:hover {
+.dropdown-content a:hover {
 	background-color: #ddd;
 }
 
