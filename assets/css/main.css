@@ -729,7 +729,7 @@ body.is-preload #experience {
 	flex-direction: column;
 }
 
-#experience .heading {
+#experience-heading {
 	display: flex;
 	flex-direction: column;
     text-align: left;
@@ -761,7 +761,7 @@ body.is-preload #experience {
 	align-self: center;
 }
 
-#experience .heading .position {
+#experience-heading, #experience-job {
 	display: flex;
 	justify-content: space-between;
 }
