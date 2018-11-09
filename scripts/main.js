@@ -41,9 +41,6 @@
         // Handle Lock
         // Already locked? Speed through "show" steps without delays
         if (locked || (typeof initial !== 'undefined' && initial === true)) {
-            // Mark as switching
-            $body.addClass('is-switching')
-
             // Mark as visible 
             $body.addClass('is-section-visible')
 
