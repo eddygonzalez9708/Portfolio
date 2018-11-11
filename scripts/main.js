@@ -54,16 +54,11 @@
             // Show section 
             $section.show()
 
-            // Activate article
+            // Activate section
             $section.addClass('active')
 
             // Unlock 
             locked = false
-            
-            // Unmark as switching.
-            setTimeout(function() {
-                $body.removeClass('is-switching')
-            }, (initial ? 1000 : 0))
 
             return
         }
@@ -71,21 +66,21 @@
         // Lock
         locked = true
 
-        // Section alread visible? Just swap articles 
+        // Section alread visible? Just swap sections
         if ($body.hasClass('is-section-visible')) {
             // Deactivate current section.
             let $currentSection = $sections.filter('.active')
             $currentSection.removeClass('active')
             
-            // Show article
+            // Show section
 			setTimeout(function() {
-                // Hide current article
+                // Hide current section
 				$currentSection.hide()
 
-				// Show article
+				// Show section
 				$section.show()
 
-				// Activate article
+				// Activate section
 				setTimeout(function() {
                     $section.addClass('active')
 
@@ -123,7 +118,7 @@
                         .scrollTop(0)
                         .triggerHandler('resize.flexbox-fix')
                     
-                    // Unlock.
+                    // Unlock
                     setTimeout(function() {
                         locked = false;
                     }, delay)
@@ -148,9 +143,6 @@
         // Handle lock
         // Already locked? Speed through "hide" steps w/o delays
 		if (locked) {
-            // Mark as switching
-            $body.addClass('is-switching')
-            
             // Deactivate section
             $section.removeClass('active')
             
@@ -166,9 +158,6 @@
             
             // Unlock
 			locked = false;
-
-			// Unmark as switching
-			$body.removeClass('is-switching');
 
 			// Window stuff.
 			$window
@@ -219,9 +208,11 @@
 				location.hash = ''
             })
         
-        // Prevent clicks from inside article from bubbling
+        // Prevent clicks from inside section from bubbling
 		$this.on('click', function(event) {
-			event.stopPropagation()
+            if ($this[0].id !== 'projects') {
+                event.stopPropagation()
+            }
         })
     })
     
@@ -229,16 +220,19 @@
     $body.on('click', function(event) {
         // Section visible? Hide.
         if ($body.hasClass('is-section-visible')) {
-            $section._hide(true)
+            if(event.target.id === 'wrapper') {
+                $wrapper._hide()
+            }
         }
     })
     
     $window.on('keyup', function(event) {
         switch (event.keyCode) {
+            // Escape Key
             case 27:
             // Section visible? Hide
                 if ($body.hasClass('is-section-visible')) {
-                    $section._hide(true)
+                    $wrapper._hide(true)
                 }
                 break
             default:
@@ -253,6 +247,7 @@
             event.preventDefault()
             event.stopPropagation()
         // Otherwise, check for a matching section
+            $wrapper._hide()
         } else if ($sections.filter(location.hash).length > 0) {
             // Prevent default
             event.preventDefault()

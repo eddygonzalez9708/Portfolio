@@ -596,7 +596,7 @@ button:disabled,
 	opacity: 0.5;
 }
 
-#home, #main, #about, #projects, #experience {
+#home, #main, #projects, #experience {
 	-moz-transform-origin: 50% 50%;
 	-webkit-transform-origin: 50% 50%;
 	-ms-transform-origin: 50% 50%;
@@ -647,10 +647,17 @@ button:disabled,
 }
 
 body.is-preload #home,
-body.is-preload #main,
-body.is-preload #about,
-body.is-preload #projects,
-body.is-preload #experience {
+body.is-preload #main {
+	-moz-transform: rotateX(15deg);
+	-webkit-transform: rotateX(15deg);
+	-ms-transform: rotateX(15deg);
+	transform: rotateX(15deg);
+	opacity: 0;
+}
+
+#about, 
+#projects, 
+#experience {
 	-moz-transform: rotateX(15deg);
 	-webkit-transform: rotateX(15deg);
 	-ms-transform: rotateX(15deg);
@@ -999,11 +1006,27 @@ body.is-preload #bg:before {
 }
 
 #wrapper section.active {
-	-moz-transform: translateY(0);
-	-webkit-transform: translateY(0);
-	-ms-transform: translateY(0);
-	transform: translateY(0);
-	opacity: 1;
+	-moz-transform-origin: 50% 50%;
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50% !important;
+	-moz-transform: rotateX(0deg);
+	-webkit-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+	transform: rotateX(0deg) !important;
+	-moz-transition: opacity 1s ease, -moz-transform 1s ease;
+	-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+	-ms-transition: opacity 1s ease, -ms-transform 1s ease;
+	transition: opacity 1s ease, transform 1s ease !important;
+	padding: 4.5em 3em 3em 3em !important;
+	background: #ffffff !important;
+	border-radius: 4px !important;
+	cursor: default;
+	max-width: 100% !important;
+	opacity: 0.95 !important;
+	position: relative !important;
+	text-align: center !important;
+	width: 60% !important;
 }
 
 #wrapper section .close:hover:before {

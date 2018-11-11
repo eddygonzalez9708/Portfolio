@@ -2,11 +2,13 @@ function dropDown(github) {
     document.getElementById(github).classList.toggle('show')
 }
 
-window.onclick = function(event) {
+const projects = document.getElementById('projects')
+
+projects.onclick = function(event) {
     if (!event.target.matches('.dropbtn') && !event.target.matches('.arrow')) { 
-        let dropdowns = document.getElementsByClassName('dropdown_content')
-        for (let i = 0; i < dropdowns.length; i++) {
-            let openDropdown = dropdowns[i]
+        let dropdowns = document.getElementsByClassName('dropdown-content')
+        for (let x = 0; x < dropdowns.length; x++) {
+            let openDropdown = dropdowns[x]
             if (openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show')
             }
