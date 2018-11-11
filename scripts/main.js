@@ -47,7 +47,7 @@
             // Deactivate all sections (just in case one's already active)
             $sections.removeClass('active')
 
-            // Hider home, footer
+            // Hide home, footer
             $home.hide()
             $footer.hide()
 
@@ -68,7 +68,7 @@
 
         // Section alread visible? Just swap sections
         if ($body.hasClass('is-section-visible')) {
-            // Deactivate current section.
+            // Deactivate current section
             let $currentSection = $sections.filter('.active')
             $currentSection.removeClass('active')
             
@@ -91,10 +91,10 @@
 
 				    // Unlock
 				    setTimeout(function() {
-					    locked = false;
+					    locked = false
                     }, delay)
-                }, 25);
-            }, delay);
+                }, 25)
+            }, delay)
         // Otherwise, handle as normal.
 		} else {
             // Mark as visible.
@@ -120,7 +120,7 @@
                     
                     // Unlock
                     setTimeout(function() {
-                        locked = false;
+                        locked = false
                     }, delay)
                 }, 25)
             }, delay)
@@ -149,7 +149,7 @@
             // Hide section
 			$section.hide()
 
-			// Show header, footer
+			// Show home, footer
             $home.show()
             $footer.show()
 
@@ -159,7 +159,7 @@
             // Unlock
 			locked = false;
 
-			// Window stuff.
+			// Window stuff
 			$window
 				.scrollTop(0)
                 .triggerHandler('resize.flexbox-fix');
@@ -221,7 +221,7 @@
         // Section visible? Hide.
         if ($body.hasClass('is-section-visible')) {
             if(event.target.id === 'wrapper') {
-                $wrapper._hide()
+                $wrapper._hide(true)
             }
         }
     })
