@@ -202,7 +202,7 @@
 	$sections.each(function() {
         let $this = $(this)
         // Close
-		$('<div class="close">Close</div>')
+		$('<div class="close"></div>')
 			.appendTo($this)
 			.on('click', function() {
 				location.hash = ''
