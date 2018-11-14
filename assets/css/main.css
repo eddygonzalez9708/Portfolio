@@ -216,7 +216,7 @@ h1, h2 {
 
 p {
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	font-weight: bold;
 	margin: 0 0 1rem 0;
 	text-align: justify;
@@ -370,30 +370,40 @@ ul.icons li a:hover {
     text-align: left;
 }
 
+#experience a {
+	margin: 0 0 2rem 0;
+	width: 30%
+}
+
 #experience img {
-	width: 25%;
-	margin: 0 0 0.75em 0;
+	width: 100%;
 }
 
 .astreya {
-	display: flex
+	display: flex;
+	justify-content: space-between;
+	width: 50% !important; 
 }
 
 .astreya_logo {
-	width: 15% !important;
-	height: 100px;
-	margin: 0 5% 0.75em 0 !important;
+	height: 10rem;
+	width: 10rem !important;
+	margin: 0 2rem 0 0; 
 }
 
 .astreya h2 {
 	align-self: center;
+	margin: 0 2rem 0 0;
 }
 
 .google_logo {
-	width: 25% !important;
-	height: 50px;
-	margin: 0 0 0.75em 5% !important;
 	align-self: center;
+	width: 13rem !important;
+	margin: 0 2rem 0 0; 
+}
+
+.perscholas_logo {
+	margin: 0 0 2rem -1rem !important; 
 }
 
 .experience-job {
@@ -402,17 +412,15 @@ ul.icons li a:hover {
 }
 
 #experience ul {
-	padding: 0;
-    margin-left: 3%;
-	list-style-type: square;
+	list-style: square inside;
+	margin: 0 0 3rem 0;
 }
 
 #experience ul li {
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 1.6rem;
 	font-weight: bold;
-	margin: 0 0 10px 0;
-	padding: 0;
+	margin: 0 0 2rem 0;
 	text-align: justify;
 	text-transform: initial;
 }
@@ -471,6 +479,28 @@ body.is-ie #wrapper {
 
 	.project-links {
 		justify-content: center;
+	}
+
+	.experience-heading {
+		align-items: center;
+		text-align: center;
+	}
+
+	.experience-job {
+		flex-direction: column;
+	}
+
+	.astreya {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.astreya_logo {
+		margin: 0 0 2rem 0;
+	}
+
+	.astreya h2 {
+		margin: 0 0 2rem 0; 
 	}
 
 	form > .fields {
