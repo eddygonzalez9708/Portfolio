@@ -8,9 +8,11 @@
 
     // Play intial animations on page load
     $window.on('load', function() {
-        window.setTimeout(function() {
-            $body.removeClass('is-preload')
-        }, 100)
+        if (!$body.hasClass('is-section-visible')) {
+            window.setTimeout(function() {
+                $body.removeClass('is-preload')
+            }, 100)
+        }
     })
 
     // Fix: Flexbox min-height bug on IE. 
@@ -243,6 +245,10 @@
     $window.on('hashchange', function(event) {
         // Empty hash?
         if (location.hash === '' ||	location.hash === '#') {
+            $home.addClass('onSectionActive')
+            window.setTimeout(function() {
+                $home.removeClass('onSectionActive')
+            }, 500)
             // Prevent default
             event.preventDefault()
             event.stopPropagation()
@@ -284,6 +290,7 @@
     if (location.hash !== '' &&	location.hash !== '#') {
         $window.on('load', function() {
             $wrapper._show(location.hash.substr(1), true)
+            console.log('location hash sub', location.hash.substr(1));
         })
     }
 })(jQuery)

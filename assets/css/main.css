@@ -34,7 +34,6 @@ body {
 body, input {
 	color: #414f57;
 	font-family: monospace;
-	font-size: 1.4rem;
 	font-weight: 300;
 	line-height: 2;
 	letter-spacing: .1rem;
@@ -122,6 +121,14 @@ body.is-preload:after {
 #wrapper:before {
 	content: '';
 	display: block;
+}
+
+#home.onSectionActive {
+	-moz-transform: rotateX(15deg);
+	-webkit-transform: rotateX(15deg);
+	-ms-transform: rotateX(15deg);
+	transform: rotateX(15deg);
+	opacity: 0;	
 }
 
 #wrapper section.active, #home {
