@@ -255,11 +255,11 @@
         // Otherwise, check for a matching section
             $wrapper._hide()
         } else if ($sections.filter(location.hash).length > 0) {
+            // Show section
+            $wrapper._show(location.hash.substr(1))
             // Prevent default
             event.preventDefault()
             event.stopPropagation()
-            // Show section
-            $wrapper._show(location.hash.substr(1))
         }
     })
 
@@ -289,8 +289,7 @@
     // Initial section
     if (location.hash !== '' &&	location.hash !== '#') {
         $window.on('load', function() {
-            $wrapper._show(location.hash.substr(1), true)
-            console.log('location hash sub', location.hash.substr(1));
+            $wrapper._show(location.hash.substr(1))
         })
     }
 })(jQuery)

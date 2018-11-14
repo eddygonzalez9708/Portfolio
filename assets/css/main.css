@@ -83,6 +83,10 @@ body.is-preload #home {
 	opacity: 0;
 }
 
+body.is-preload #footer {
+	display: none;
+}
+
 body.is-preload:after {
 	opacity: 1;
 }
