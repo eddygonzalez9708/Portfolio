@@ -23,7 +23,7 @@ html {
 body {
 	height: 100%;
 	line-height: 1;
-	background-image: url("images/overlay.png"), linear-gradient(360deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url("../../images/brookly_bridge.jpg");
+	background-image: url("images/overlay.png"), linear-gradient(360deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("../../images/brookly_bridge.jpg");
 	background-repeat: repeat, no-repeat;
 	background-size: 100px, cover, cover;
 	background-position: top left, center center, bottom center;
@@ -283,16 +283,12 @@ ul.icons li a:before {
 	top: 0;
 	left: 0;
 	width: inherit;
-	font-size: 3rem;
+	font-size: 5rem;
 	text-indent: 0;
 }
 
 ul.icons li a:hover:before {
-	text-shadow: 1.25px 0px 0px #696969, -1.25px 0px 0px #696969, 0px 1.25px 0px #696969, 0px -1.25px 0px #696969;
-}
-
-ul.icons li a:hover {
-	border-color: #696969;
+	text-shadow: 2px 0 0 #808080, -2px 0 0 #808080, 0 2px 0 #808080, 0 -2px 0 #808080;
 }
 
 #footer .copyright {
@@ -302,7 +298,7 @@ ul.icons li a:hover {
 }
 
 #footer .copyright li {
-	margin: 0 2rem 0 0;
+	margin: 0 2rem 0 2rem;
 }
 
 .project-heading {
@@ -578,9 +574,9 @@ body.is-ie #wrapper {
 		margin-left: -0.5rem;
 	}
 
-	ul.icons li a:before {
+	/* ul.icons li a:before {
 		font-size: 1.5rem;
-	}
+	} */
 }
 
 @media screen and (max-width: 360px) {
