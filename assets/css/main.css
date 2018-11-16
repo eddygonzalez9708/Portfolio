@@ -268,18 +268,13 @@ a:hover {
 }
 
 ul.icons li a {
-	border: 2px solid #fff;
-	border-radius: 100%;
 	color: #ffffff;
 	display: block;
 	font-family: FontAwesome;
 	height: 5rem;
 	line-height: 5rem;
-	overflow: hidden;
 	position: relative;
 	text-align: center;
-	text-decoration: none;
-	text-indent: 5rem;
 	width: 5rem;
 }
 
