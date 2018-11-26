@@ -1,7 +1,7 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
 
-html, body, div, span, h1, h2, p, a, 
+html, body, div, span, h1, h2, h3, p, a, 
 img, ul, li, fieldset, form, label,
 footer, header, nav, section {
 	border: 0;
@@ -177,7 +177,11 @@ h2 {
 	font-size: 2rem;
 }
 
-h1, h2 {
+h3 {
+	font-size: 1.8rem; 
+}
+
+h1, h2, h3 {
 	color: #313f47;
 	line-height: 1.5;
 	margin: 0 0 2rem 0;
