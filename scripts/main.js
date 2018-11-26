@@ -6,11 +6,9 @@
     let $footer = $('#footer')
     let $sections = $wrapper.children('section')
 
-    // Play intial animations on page load
+    // Play initial animations on page load
     $window.on('load', function() {
-        console.log('loaded')
         if (!$body.hasClass('is-section-visible')) {
-            console.log('vis')
             window.setTimeout(function() {
                 $body.removeClass('is-preload')
             }, 100)
