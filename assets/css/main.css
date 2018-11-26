@@ -56,12 +56,12 @@ body:after {
 	top: 0;
 	width: 100%;
 	z-index: 1;
-	transition: opacity 1.75s ease-out;
+	transition: opacity 1s ease-out;
 }
 
 body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-	animation: none !important;
-	transition: none !important;
+	animation: none;
+	transition: none;
 }
 
 body.is-preload #home {
@@ -81,9 +81,9 @@ body.is-preload:after {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+	min-height: 100vh;
 	justify-content: center;
-	min-height: 100%;
-	padding: 1.5rem;
+	padding: 2rem;
 	perspective: 1000px;
 	position: relative;
 	z-index: 2;
@@ -108,7 +108,6 @@ body.is-preload:after {
 	border-radius: 4px;
 	padding: 4.5rem 3rem 3rem 3rem ;
 	cursor: default;
-	margin: 0 0 2rem 0;
 	max-width: 100%;
 	opacity: .95;
 	text-align: center;
@@ -203,7 +202,7 @@ section {
 
 #footer {
 	cursor: default;
-	margin: 0 0 2rem 0;
+	margin: 2rem 0 2rem 0;
 	width: 60%;
 }
 
