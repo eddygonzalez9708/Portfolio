@@ -223,7 +223,7 @@
         // Section visible? Hide.
         if ($body.hasClass('is-section-visible')) {
             if(event.target.id === 'wrapper') {
-                $wrapper._hide(true)
+                location.hash = ''
             }
         }
     })
@@ -234,7 +234,7 @@
             case 27:
             // Section visible? Hide
                 if ($body.hasClass('is-section-visible')) {
-                    $wrapper._hide(true)
+                    location.hash = ''
                 }
                 break
             default:
