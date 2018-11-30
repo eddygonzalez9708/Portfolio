@@ -29,7 +29,7 @@ body {
 	background-position: top left, center center, bottom center;
 	color: #414f57;
 	font-family: monospace;
-	height: 100vh;
+	min-height: 100vh;
 	line-height: 2;
 	letter-spacing: .1rem;
 	text-transform: uppercase;
