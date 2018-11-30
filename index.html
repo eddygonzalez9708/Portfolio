@@ -19,7 +19,7 @@
 	  <div id='home'>
 	    <header>
 		  <span class='avatar'>
-			<img src='./images/Edward_Gonzalez.jpg' alt='Picture of Edward Gonzalez' />
+			<img id='my-image' src='./images/Edward_Gonzalez.jpg' alt='Picture of Edward Gonzalez' />
 		  </span>
 		  <h1>Edward Gonzalez</h1>
 		  <h2>Software Engineer</h2>
@@ -271,10 +271,19 @@
 	<!-- Footer Section End -->
    </div>
    <!-- Wrapper End -->
+
+   <!-- Image Modal -->
+   <div id='my-modal' class='modal'>
+     <!--  The Close Button -->
+	 <span class='fa-times modal-close'></span>
+	 <!-- Modal Content (My Image) -->
+	 <img class='modal-content' id='img01' />
+   </div>
 	
    <!-- Scripts Start -->
-   <script type="text/javascript" src='./scripts/main.js'></script>
-   <script type="text/javascript" src='./scripts/dropDown.js'></script>
+   <script type='text/javascript' src='./scripts/animation.js'></script>
+   <script type='text/javascript' src='./scripts/dropDown.js'></script>
+   <script type='text/javascript' src='./scripts/modal.js'></script>
    <!-- Scripts End -->
   </body>
 </html>
