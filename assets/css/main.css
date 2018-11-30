@@ -12,7 +12,7 @@ img, ul, li, footer, header, section {
 
 html {
 	box-sizing: border-box;
-	min-height: 100vh;
+	height: 100vh;
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
@@ -29,7 +29,7 @@ body {
 	background-position: top left, center center, bottom center;
 	color: #414f57;
 	font-family: monospace;
-	min-height: 100vh;
+	height: 100vh;
 	line-height: 2;
 	letter-spacing: .1rem;
 	text-transform: uppercase;
