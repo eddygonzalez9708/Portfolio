@@ -440,12 +440,7 @@ span.fa-times.close:hover{
 /* Modal Content */ 
 
 .modal-content {
-	animation-duration: 0.6s;
-	-webkit-animation-duration: 0.6s;
-	-moz-animation-duration: 0.6s;
-	animation-name: zoom;
-	-webkit-animation-name: zoom;
-	-moz-animation-name: zoom;
+	animation: zoom 0.6s;
 	border-radius: 100%;
 	display: block;
 	margin: auto;
@@ -455,16 +450,6 @@ span.fa-times.close:hover{
 @keyframes zoom {
 	from {transform: scale(0)}
 	to {transform: scale(1)}
-}
-
-@-moz-keyframes zoom {
-	from {-moz-transform: scale(0)}
-	to {-moz-transform: scale(1)}
-}
-
-@-webkit-keyframes zoom {
-	from {-webkit-transform: scale(0)}
-	to {-webkit-transform: scale(1)}
 }
 
 /* The Close Button for the Modal */ 
