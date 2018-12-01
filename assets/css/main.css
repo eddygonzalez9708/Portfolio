@@ -458,6 +458,11 @@ span.fa-times.close:hover{
 	to {transform: scale(1)}
 }
 
+@-webkit-keyframes zoom {
+	from {transform: scale(0)}
+	to {transform: scale(1)}
+}
+
 /* The Close Button for the Modal */ 
 
 .modal-close {
