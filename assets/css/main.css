@@ -441,9 +441,7 @@ span.fa-times.close:hover{
 
 .modal-content {
 	animation-duration: 0.6s;
-	-moz-animation-duration: 0.6s;
 	animation-name: zoom;
-	-moz-animation-duration: 0.6s;
 	border-radius: 100%;
 	display: block;
 	margin: auto;
@@ -451,6 +449,11 @@ span.fa-times.close:hover{
 }
 
 @keyframes zoom {
+	from {transform: scale(0)}
+	to {transform: scale(1)}
+}
+
+@-moz-keyframes zoom {
 	from {transform: scale(0)}
 	to {transform: scale(1)}
 }
