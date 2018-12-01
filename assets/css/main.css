@@ -441,7 +441,11 @@ span.fa-times.close:hover{
 
 .modal-content {
 	animation-duration: 0.6s;
+	-webkit-animation-duration: 0.6s;
+	-moz-animation-duration: 0.6s;
 	animation-name: zoom;
+	-webkit-animation-name: zoom;
+	-moz-animation-name: zoom;
 	border-radius: 100%;
 	display: block;
 	margin: auto;
