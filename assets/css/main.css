@@ -280,19 +280,31 @@ span.fa-times.close:hover{
 }
 
 .project-links {
-	color: #007e7e;
+	color: #fff;
 	display: flex;
 	margin: 1rem 0 0 0;
 }
 
 .project-links a {
+	background: #007e7e;
+	border-radius: .8rem;
 	height: 100%;
 	margin: 0 2rem 0 0;
+    padding: .8rem;
+}
+
+.project-links *:hover {
+	color: #fff;
+	cursor: pointer;
+	opacity: .7;
 }
 
 .dropdown {
+	background: #007e7e;
+	border-radius: .8rem;
 	display: flex;
 	flex-direction: column;
+	padding: .8rem;
 }
 
 .dropdown button {
@@ -306,11 +318,6 @@ span.fa-times.close:hover{
 	padding: 0;
 	transition: color 0.2s ease, border-color 0.2s ease;
 	text-transform: uppercase;
-}
-
-.dropdown button:hover {
-	color: #B0C4DE;
-	cursor: pointer;
 }
 
 .arrow {
