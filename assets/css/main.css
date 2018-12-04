@@ -285,39 +285,46 @@ span.fa-times.close:hover{
 	margin: 1rem 0 0 0;
 }
 
-.project-links a {
+.view-project {
 	background: #007e7e;
 	border-radius: .8rem;
-	height: 100%;
-	margin: 0 2rem 0 0;
-    padding: .8rem;
+	padding: .8rem;
 }
 
-.project-links *:hover {
+.project-links a {
+	height: 100%;
+	margin: 0 2rem 0 0;
+}
+
+.project-links a:hover {
 	color: #fff;
 	cursor: pointer;
 	opacity: .7;
 }
 
 .dropdown {
-	background: #007e7e;
-	border-radius: .8rem;
 	display: flex;
 	flex-direction: column;
-	padding: .8rem;
 }
 
 .dropdown button {
-	background: none;
+	background: #007e7e;
 	border: none;
-	color: inherit;
+    border-radius: .8rem;
+    color: #fff;
 	font: inherit;
 	font-size: 1.6rem;
 	letter-spacing: .1rem;
 	outline: none;
-	padding: 0;
+	padding: .8rem;
 	transition: color 0.2s ease, border-color 0.2s ease;
 	text-transform: uppercase;
+	width: 100%;
+}
+
+.dropdown button:hover {
+	cursor: pointer;
+	opacity: .7;
 }
 
 .arrow {

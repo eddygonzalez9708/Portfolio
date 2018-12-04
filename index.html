@@ -89,9 +89,9 @@
 			Twilio, and Stripe.
 		</p>
 		<div class='project-links'>
-		  <a href='https://quizzercs10.herokuapp.com' alt='Quizzer Website Link' target='_blank'>View Project</a>
+		  <a class='view-project' href='https://quizzercs10.herokuapp.com' alt='Quizzer Website Link' target='_blank'>View Project</a>
 		  <div class='dropdown'>
-		    <button class='dropbtn' onclick='dropDown("quizzer")'>View Github <span class='arrow'>&#x25BC;</span></button>
+		    <button class='dropbtn quizzer' onclick='dropDown("quizzer", event)'>View Github <span class='arrow'>&#x25BC;</span></button>
 		    <div id='quizzer' class='dropdown-content'>
 			  <a href='https://github.com/Lambda-School-Labs/CS10-quizzer' alt='Front-End Code for Quizzer' target='_blank'>Front-End</a>
 			  <a 
@@ -112,9 +112,14 @@
 		<p>Lambda Notes is a note taking web application that allows users to create, view, edit and delete their notes online.</p>
 		<p>Tech Stack: HTML, CSS, JavaScript, React, Axios, Express, Cors, Helmet, Bcrypt, Morgan, Mongo DB, Mongoose and JWT.</p>
 		<div class='project-links'>
-		  <a href='https://lambda-notes-frontend.herokuapp.com' alt='Lambda Notes Website Link' target='_blank'>View Project</a>
+			<a 
+				class='view-project'
+				href='https://lambda-notes-frontend.herokuapp.com'
+				alt='Lambda Notes Website Link'
+				target='_blank'>View Project
+			</a>
 		  <div class='dropdown'>
-		    <button class='dropbtn' onclick='dropDown("notes")'>View Github <span class='arrow'>&#x25BC;</span></button>
+		    <button class='dropbtn notes' onclick='dropDown("notes", event)'>View Github <span class='arrow'>&#x25BC;</span></button>
 			<div id='notes' class='dropdown-content'>
 			  <a 
 			    href='https://github.com/eddygonzalez9708/front-end-project-week'
