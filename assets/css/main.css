@@ -1,7 +1,7 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
 
-html, body, div, span, h1, h2, h3, p, a, 
+html, body, div, span, h1, h2, p, a, 
 img, ul, li, footer, header, section {
 	border: 0;
 	font: inherit;
@@ -18,15 +18,15 @@ html {
 }
 
 *, *:before, *:after {
-	box-sizing: inherit;
+	box-sizing: border-box;
 }
 
 body {
 	background-attachment: fixed;
 	background-image: url("images/overlay.png"), linear-gradient(360deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("../../images/brookly_bridge.jpg");
-	background-repeat: repeat, no-repeat;
+	background-repeat: repeat, no-repeat, no-repeat;
 	background-size: 10px, cover, cover;
-	background-position: top left, center center, bottom center;
+	background-position: top left, bottom center, center center;
 	color: #414f57;
 	font-family: monospace;
 	height: 100vh;
@@ -40,8 +40,8 @@ body:after {
 	background-color: #000;
 	background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(125, 100, 150, .5), rgba(0, 100, 100, .35));
 	background-repeat: repeat, no-repeat;
-	background-size: 10px, cover, cover;
-	background-position: top left, center center, bottom center;
+	background-size: 10px, cover;
+	background-position: top left, center center;
 	content: '';
 	display: block;
 	height: inherit;
@@ -82,20 +82,19 @@ body.is-section-visible #footer {
 }
 
 h1 {
+	color: #006464;
 	font-size: 3rem;
+	font-weight: bold;
 	letter-spacing: .3rem;
 }
 
 h2 {
+	color: #640000;
 	font-size: 2rem;
+	font-weight: bold;
 }
 
-h3 {
-	font-size: 1.8rem; 
-}
-
-h1, h2, h3 {
-	color: #313f47;
+h1, h2 {
 	line-height: 1.5;
 	margin: 1rem 0 0 0;
 }
@@ -134,7 +133,7 @@ a {
 }
 
 a:hover {
-	color: #B0C4DE;
+	color: #7fb1b1;
 }
 
 #my-image:hover {
@@ -210,7 +209,10 @@ a:hover {
 }
 
 .links {
+	color: #696969;
 	display: flex;
+	font-size: 1.8rem;
+	font-weight: bold;
 	justify-content: space-evenly;
     list-style: none;
     padding: 0;
@@ -219,6 +221,10 @@ a:hover {
 
 .links li {
 	margin: 0 0 0 1rem; 
+}
+
+.links li a {
+	font-size: 1.8rem;
 }
 
 ul.icons li a {
@@ -242,7 +248,7 @@ ul.icons li a:before {
 }
 
 ul.icons li a:hover:before {
-	text-shadow: 2px 0 0 #808080, -2px 0 0 #808080, 0 2px 0 #808080, 0 -2px 0 #808080;
+	text-shadow: 2px 0 0 #7fb1b1, -2px 0 0 #7fb1b1, 0 2px 0 #7fb1b1, 0 -2px 0 #7fb1b1;
 }
 
 /* Close button */ 
