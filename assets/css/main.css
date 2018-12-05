@@ -248,7 +248,7 @@ ul.icons li a:before {
 }
 
 ul.icons li a:hover:before {
-	text-shadow: 2px 0 0 #7fb1b1, -2px 0 0 #7fb1b1, 0 2px 0 #7fb1b1, 0 -2px 0 #7fb1b1;
+	text-shadow: 3px 0 0 #696969, -3px 0 0 #696969, 0 3px 0 #696969, 0 -3px 0 #696969;
 }
 
 /* Close button */ 
