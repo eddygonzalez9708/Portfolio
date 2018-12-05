@@ -30,7 +30,6 @@ body {
 	color: #414f57;
 	font-family: monospace;
 	min-height: 100vh;
-	line-height: 2;
 	letter-spacing: .1rem;
 	text-transform: uppercase;
 	width: 100vw; 
@@ -95,14 +94,14 @@ h2 {
 }
 
 h1, h2 {
-	line-height: 1.5;
-	margin: 1rem 0 0 0;
+	margin: 2rem 0 0 0;
 }
 
 p {
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 1.6rem;
 	font-weight: bold;
+	line-height: 2;
 	margin: 1rem 0 0 0;
 	text-align: justify;
 	text-transform: initial;
@@ -157,11 +156,6 @@ a:hover {
 	z-index: 1;
 }
 
-#wrapper:before {
-	content: '';
-	display: block;
-}
-
 /* Home */ 
 
 #wrapper section.active, #home {
@@ -200,11 +194,10 @@ a:hover {
 	background: #c8cccf;
 	content: '';
 	display: block;
-	height: .1rem;
-	left: -2.7rem;
+	height: .2rem;
 	position: absolute;
 	top: 50%;
-	width: calc(100% + 6em);
+	width: 100%;
 	z-index: -1;
 }
 
@@ -232,7 +225,6 @@ ul.icons li a {
 	display: block;
 	font-family: FontAwesome;
 	height: 5rem;
-	line-height: 5rem;
 	position: relative;
 	text-align: center;
 	width: 5rem;
@@ -259,7 +251,6 @@ span.fa-times.close {
 	font-family: FontAwesome;
 	font-size: 3rem;
 	height: 4rem;
-	line-height: 4rem;
 	position: absolute;
 	right: .5rem;
 	top: .5rem;
@@ -295,7 +286,7 @@ span.fa-times.close:hover{
 	background: #696969;
 	border-radius: .8rem;
 	font-weight: bold;
-	padding: .8rem;
+	padding: 1.2rem;
 }
 
 .project-links a {
@@ -324,7 +315,7 @@ span.fa-times.close:hover{
 	font-weight: bold;
 	letter-spacing: .1rem;
 	outline: none;
-	padding: .8rem;
+	padding: 1.2rem;
 	transition: color 0.2s ease, border-color 0.2s ease;
 	text-transform: uppercase;
 	width: 100%;
@@ -356,6 +347,7 @@ span.fa-times.close:hover{
 	color: black;
 	font-weight: bold;
 	margin: 0;
+	padding: 1rem;
 	text-decoration: none;
 }
 
@@ -430,6 +422,7 @@ span.fa-times.close:hover{
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 1.6rem;
 	font-weight: bold;
+	line-height: 2;
 	margin: 0 0 1rem 0;
 	text-align: justify;
 	text-transform: initial;
@@ -489,7 +482,6 @@ span.fa-times.close:hover{
 	font-family: FontAwesome;
 	font-size: 3rem;
 	height: 4rem;
-	line-height: 4rem;
 	position: absolute;
 	right: 1rem;
 	top: 1rem;
@@ -505,7 +497,7 @@ span.fa-times.close:hover{
 @media screen and (max-width: 768px) {
 	#home,
 	#wrapper section.active {
-		width: 80%;
+		width: 80vw;
 	}
 
 	.links {
@@ -513,7 +505,7 @@ span.fa-times.close:hover{
 	}
 
 	.links li {
-		margin: 0 0 .5rem 0;
+		margin: 0 0 1rem 0;
 	}
 
 	.modal-content {
@@ -522,28 +514,14 @@ span.fa-times.close:hover{
 }
 
 @media screen and (max-width: 480px) {
-	html,
-	body {
-		min-width: 320px;
-	}
-
-	body {
-		line-height: 1.75;
-	}
-
 	#wrapper {
-		justify-content: flex-start;
+		justify-content: space-between;
 		padding: 0;
 	}
 
 	#home,
 	#wrapper section.active {
 		width: 100%;
-	}
-
-	#home .avatar:before {
-		left: -2em;
-		width: calc(100% + 4em);
 	}
 
 	.project-heading {
@@ -578,16 +556,10 @@ span.fa-times.close:hover{
 	}
 
 	#footer {
-		margin: 5rem 0 0 0;
+		margin: 2rem 0 2rem 0;
 	}
 
 	.modal-content {
 		width: 70vw;
-	}
-}
-
-@media screen and (max-width: 360px) {
-	#wrapper {
-		padding: 0.75em;
 	}
 }
