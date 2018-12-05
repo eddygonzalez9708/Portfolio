@@ -292,8 +292,9 @@ span.fa-times.close:hover{
 }
 
 .view-project {
-	background: #007e7e;
+	background: #696969;
 	border-radius: .8rem;
+	font-weight: bold;
 	padding: .8rem;
 }
 
@@ -314,12 +315,13 @@ span.fa-times.close:hover{
 }
 
 .dropdown button {
-	background: #007e7e;
+	background: #003264;
 	border: none;
     border-radius: .8rem;
     color: #fff;
 	font: inherit;
 	font-size: 1.6rem;
+	font-weight: bold;
 	letter-spacing: .1rem;
 	outline: none;
 	padding: .8rem;
@@ -346,8 +348,13 @@ span.fa-times.close:hover{
 	overflow: auto;
 }
 
+.dropdown-content a:first-child {
+	border-bottom: 2px solid black;
+}
+
 .dropdown-content a {
 	color: black;
+	font-weight: bold;
 	margin: 0;
 	text-decoration: none;
 }
