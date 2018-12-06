@@ -170,7 +170,7 @@ a:hover {
 	transition: opacity 1s ease, transform 1s ease;
 	transform: rotateX(0deg);
 	transform-origin: 50% 50%;
-	width: 60%;
+	width: 60vw;
 }
 
 #home.onSectionActive {
@@ -265,7 +265,7 @@ span.fa-times.close:hover{
 /* Project Section */ 
 
 .project {
-	margin: 2rem 0 0 0;
+	margin: 3rem 0 0 0;
 }
 
 .project h2 {
@@ -428,7 +428,7 @@ span.fa-times.close:hover{
 #footer {
 	cursor: default;
 	margin: 2rem 0 2rem 0;
-	width: 60%;
+	width: 60vw;
 }
 
 #footer .copyright {
@@ -502,7 +502,7 @@ span.fa-times.close:hover{
 	}
 
 	.links li {
-		margin: 0 0 1rem 0;
+		margin: 0 0 2rem 0;
 	}
 
 	.modal-content {
@@ -523,6 +523,10 @@ span.fa-times.close:hover{
 
 	.project-heading {
 		flex-direction: column;
+	}
+
+	.project-heading h2:nth-child(2) {
+		margin: 2rem 0 0 0;
 	}
 
 	.project-links {
