@@ -326,10 +326,6 @@ span.fa-times.close:hover{
 	opacity: .7;
 }
 
-.arrow {
-	font-size: 1rem;
-}
-
 .dropdown-content {
 	background: #f1f1f1;
 	border-radius: 0 0 .8rem .8rem;
