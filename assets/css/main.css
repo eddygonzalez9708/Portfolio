@@ -103,7 +103,8 @@ p {
 	font-weight: bold;
 	line-height: 2;
 	margin: 1rem 0 0 0;
-	text-align: justify;
+	/* text-align: justify; */
+	text-align: left;
 	text-transform: initial;
 }
 
@@ -420,7 +421,7 @@ span.fa-times.close:hover{
 	font-weight: bold;
 	line-height: 2;
 	margin: 0 0 1rem 0;
-	text-align: justify;
+	text-align: left;
 	text-transform: initial;
 }
 
