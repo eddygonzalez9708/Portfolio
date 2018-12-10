@@ -238,7 +238,7 @@ ul.icons li a:before {
 }
 
 ul.icons li a:hover:before {
-	text-shadow: 3px 0 0 #696969, -3px 0 0 #696969, 0 3px 0 #696969, 0 -3px 0 #696969;
+	text-shadow: 2px 0 0 #696969, -2px 0 0 #696969, 0 2px 0 #696969, 0 -2px 0 #696969;
 }
 
 /* Close button */ 
@@ -346,7 +346,7 @@ span.fa-times.close:hover{
 }
 
 .dropdown-content a:hover {
-	background-color: #696969;
+	background-color: #7fb1b1;
 }
 
 .show {
