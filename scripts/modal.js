@@ -5,7 +5,7 @@ let img = document.getElementById('my-image')
 let modalImg = document.getElementById('img01')
 
 img.onclick = function() {
-    modal.style.display = 'block'
+    modal.style.display = 'flex'
     modalImg.src = this.src
 }
 

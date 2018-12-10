@@ -443,11 +443,13 @@ span.fa-times.close:hover{
 /* Modal */ 
 	
 .modal {
+	align-items: center;
 	background-color: rgba(0,0,0,0.9);
 	display: none; 
+	flex-direction: column;	
 	height: 100vh; 
+	justify-content: center;
 	overflow: auto; 
-	padding: 4rem;
 	position: fixed; 
 	top: 0;
 	width: 100vw;
@@ -474,13 +476,14 @@ span.fa-times.close:hover{
 .modal-close {
 	color: #fff;
 	cursor: pointer; 
-	display: block;
 	font-family: FontAwesome;
 	font-size: 3rem;
 	height: 4rem;
+	margin: 1rem;
 	position: absolute;
-	right: 1rem;
-	top: 1rem;
+	right: 0;
+	text-align: center;
+	top: 0;
     width: 4rem;
 }
 
