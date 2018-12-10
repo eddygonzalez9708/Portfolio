@@ -80,19 +80,18 @@ body.is-section-visible #footer {
 }
 
 h1 {
-	color: #006464;
 	font-size: 3rem;
 	font-weight: bold;
 	letter-spacing: .3rem;
 }
 
 h2 {
-	color: #640000;
 	font-size: 2rem;
 	font-weight: bold;
 }
 
 h1, h2 {
+	color: #006464;
 	margin: 2rem 0 0 0;
 }
 
@@ -202,7 +201,7 @@ a:hover {
 }
 
 .links {
-	color: #696969;
+	color: #640000;
 	display: flex;
 	font-size: 1.8rem;
 	font-weight: bold;
@@ -306,7 +305,7 @@ span.fa-times.close:hover{
 }
 
 .dropdown button {
-	background: #003264;
+	background: #640000;
 	border: none;
     border-radius: .8rem;
     color: #fff;
@@ -532,7 +531,12 @@ span.fa-times.close:hover{
 	}
 
 	.project-links {
-		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.project-links a:first-child {
+		margin: 0 0 2rem 0; 
 	}
 
 	.experience-company {
