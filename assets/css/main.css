@@ -63,7 +63,7 @@ body.is-preload {
 
 body.is-preload #home {
 	opacity: 0;
-	transform: rotateX(15deg);
+	transform: rotateX(50deg);
 }
 
 body.is-preload #footer {
@@ -111,7 +111,7 @@ header, section {
 }
 
 section {
-	transform: rotateX(15deg);
+	transform: rotateX(50deg);
 	opacity: 0;
 }
 
@@ -148,6 +148,7 @@ a:hover {
 	justify-content: center;
 	padding: 2rem;
 	position: relative;
+	width: 100vw;
 	z-index: 2;
 }
 
@@ -162,17 +163,15 @@ a:hover {
 	border-radius: 4px;
 	padding: 4rem ;
 	cursor: default;
-	max-width: 100%;
 	opacity: .95;
 	text-align: center;
-	transition: opacity 1s ease, transform 1s ease;
+	transition: opacity .5s linear, transform .1s linear; 
 	transform: rotateX(0deg);
-	transform-origin: 50% 50%;
 	width: 60vw;
 }
 
 #home.onSectionActive {
-	transform: rotateX(15deg);
+	transform: rotateX(50deg);
 	opacity: 0;	
 }
 
@@ -535,7 +534,7 @@ span.fa-times.close:hover{
 		flex-direction: column;
 	}
 
-	.project-links a:first-child {
+	.project-links .view-project {
 		margin: 0 0 2rem 0; 
 	}
 
