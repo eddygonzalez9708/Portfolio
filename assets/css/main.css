@@ -188,6 +188,10 @@ a:hover {
 	width: 25%;
 }
 
+#home .avatar img:hover {
+	opacity: .8;
+}
+
 #home .avatar:before {
 	background: #c8cccf;
 	content: '';
@@ -211,6 +215,8 @@ a:hover {
 	width: 37%;
 	z-index: -1;
 }
+
+
 
 .links {
 	color: #640000;
