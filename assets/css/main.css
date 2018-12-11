@@ -711,6 +711,7 @@ span.fa-times.close:hover{
 	}
 
 	#footer {
+		min-height: auto;
 		margin: 2rem 0 2rem 0;
 	}
 
