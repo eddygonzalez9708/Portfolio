@@ -350,6 +350,10 @@ span.fa-times.close:hover{
 	content: "Contact"
 }
 
+#contact-nav .fa-caret-left:after {
+	content: "Experience"
+}
+
 /* Project Section */ 
 
 .project {
@@ -554,7 +558,7 @@ span.fa-times.close:hover{
 .contact-button {
 	display: flex;
 	justify-content: flex-start;
-	margin: 2rem 0 2rem 0;
+	margin: 2rem 0 0 0;
 }
 
 .contact-button button {
