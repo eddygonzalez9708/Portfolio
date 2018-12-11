@@ -161,13 +161,20 @@ a:hover {
 #wrapper section.active, #home {
 	background: #ffffff;
 	border-radius: 4px;
-	padding: 4rem ;
 	cursor: default;
 	opacity: .95;
 	text-align: center;
 	transition: opacity .5s linear, transform .1s linear; 
 	transform: rotateX(0deg);
 	width: 60vw;
+}
+
+#wrapper #home {
+	padding: 4rem;
+}
+
+#wrapper section.active {
+	padding: 4rem 4rem 0 4rem;
 }
 
 #home.onSectionActive {
@@ -215,8 +222,6 @@ a:hover {
 	width: 37%;
 	z-index: -1;
 }
-
-
 
 .links {
 	color: #640000;
@@ -278,6 +283,69 @@ span.fa-times.close:hover{
 	color: #7fb1b1;
 }
 
+/* Botton Navigation */ 
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	margin: 4rem 0 2rem 0;
+}
+
+.nav a {
+	background-color: #228989;
+	border-radius: .8rem;
+	color: #fff;
+	font-family: monospace;
+	font-weight: bold;
+	padding: .8rem; 
+}
+
+.nav a:hover {
+	opacity: .8;
+}
+
+.fa-caret-left:before {
+	content: "\f0d9";
+	font-family: FontAwesome;
+	font-size: 1.4rem;
+}
+
+.fa-caret-left:after {
+	font-size: 2rem;
+	margin: 0 0 0 1rem;
+}
+
+.fa-caret-right:before {
+	font-size: 2rem;
+	margin: 0 1rem 0 0;
+}
+
+.fa-caret-right:after {
+	content: "\f0da";
+	font-family: FontAwesome;
+	font-size: 1.4rem;
+}
+
+#about-nav .fa-caret-left:after {
+	content: "Home"
+}
+
+#about-nav .fa-caret-right:before {
+	content: "Projects"
+}
+
+#projects-nav .fa-caret-left:after {
+	content: "About";
+}
+
+#projects-nav .fa-caret-right:before {
+	content: "Experience"
+}
+
+#experience-nav .fa-caret-left:after {
+	content: "Projects"
+}
+
 /* Project Section */ 
 
 .project {
@@ -285,6 +353,7 @@ span.fa-times.close:hover{
 }
 
 .project h2 {
+	color: #003535;
 	margin: 0
 }
 
@@ -300,7 +369,7 @@ span.fa-times.close:hover{
 }
 
 .view-project {
-	background: #696969;
+	background: #004F4F;
 	border-radius: .8rem;
 	font-weight: bold;
 	padding: 1.2rem;
@@ -365,7 +434,7 @@ span.fa-times.close:hover{
 }
 
 .dropdown-content a:hover {
-	background-color: #7fb1b1;
+	background-color: #B23636;
 }
 
 .show {
@@ -374,6 +443,10 @@ span.fa-times.close:hover{
 }
 
 /* Experience Section */ 
+
+#experience h2 {
+	color: #003535;
+}
 
 .experience-company {
 	display: flex;
