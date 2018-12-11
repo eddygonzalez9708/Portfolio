@@ -514,6 +514,59 @@ span.fa-times.close:hover{
 	text-transform: initial;
 }
 
+/* Contact Section */ 
+
+#contact form {
+	display: flex;
+	flex-direction: column;
+	margin: 3rem 0 0 0; 
+}
+
+.contact-input {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact-input input {
+	border: 2px solid  #003535;
+	border-radius: .6rem;
+	font-size: 1.6rem;
+	padding: 1rem;
+	width: 45%; 
+}
+
+#contact textarea {
+	border: 2px solid #003535;
+	border-radius: .6rem;
+	font-size: 1.6rem;
+	height: 40vh;
+	margin: 2rem 0 0 0; 
+	overflow: scroll;
+	padding: 1rem;
+	resize: none;
+	width: 100%; 
+}
+
+.contact-button {
+	display: flex;
+	justify-content: flex-start;
+	margin: 2rem 0 2rem 0;
+}
+
+.contact-button button {
+	background: #004F4F;
+	border-radius: .6rem;
+	color: #fff;
+	font-size: 1.6rem;
+	margin: 0 2rem 0 0;
+	padding: 1rem;
+	width: 30%;
+}
+
+.contact-button button:nth-child(2) {
+	background: #640000;
+} 
+
 #footer {
 	cursor: default;
 	margin: 2rem 0 2rem 0;
@@ -610,6 +663,7 @@ span.fa-times.close:hover{
 
 	#home,
 	#wrapper section.active {
+		min-height: 100vh;
 		width: 100%;
 	}
 
