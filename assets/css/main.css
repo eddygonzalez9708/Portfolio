@@ -193,9 +193,22 @@ a:hover {
 	content: '';
 	display: block;
 	height: .2rem;
+	left: 0;
 	position: absolute;
 	top: 50%;
-	width: 100%;
+	width: 37%;
+	z-index: -1;
+}
+
+#home .avatar:after {
+	background: #c8cccf;
+	content: '';
+	display: block;
+	height: .2rem;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 37%;
 	z-index: -1;
 }
 
