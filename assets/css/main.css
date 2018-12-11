@@ -346,6 +346,10 @@ span.fa-times.close:hover{
 	content: "Projects"
 }
 
+#experience-nav .fa-caret-right:before {
+	content: "Contact"
+}
+
 /* Project Section */ 
 
 .project {
