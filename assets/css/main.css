@@ -94,6 +94,7 @@ h2 {
 h1, h2 {
 	color: #006464;
 	margin: 2rem 0 0 0;
+	text-align: center;
 }
 
 p {
@@ -104,8 +105,10 @@ p {
 	text-transform: initial;
 }
 
-header, section {
-	display: block;
+header {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
 }
 
 section {
@@ -129,7 +132,7 @@ a {
 }
 
 a:hover {
-	color: #7fb1b1;
+	color: #B23636;
 }
 
 #my-image:hover {
@@ -161,7 +164,6 @@ a:hover {
 	border-radius: 4px;
 	cursor: default;
 	opacity: .95;
-	text-align: center;
 	transition: opacity .5s linear, transform .1s linear; 
 	transform: rotateX(0deg);
 	width: 60vw;
@@ -421,6 +423,7 @@ span.fa-times.close:hover{
 	display: none;
 	min-width: 160px;
 	overflow: auto;
+	text-align: center;
 }
 
 .dropdown-content a:first-child {
@@ -498,7 +501,10 @@ span.fa-times.close:hover{
 .experience-position {
 	display: flex;
 	justify-content: space-between;
-	margin: 1rem 0 0 0;
+}
+
+.experience-position h2 {
+	text-align: left;
 }
 
 .experience-company ul {
@@ -560,7 +566,6 @@ span.fa-times.close:hover{
 	font-size: 1.6rem;
 	margin: 0 2rem 0 0;
 	padding: 1rem;
-	width: 30%;
 }
 
 .contact-button button:nth-child(2) {
@@ -643,6 +648,7 @@ span.fa-times.close:hover{
 	}
 
 	.links {
+		align-items: center;
 		flex-direction: column;
 	}
 
@@ -656,6 +662,15 @@ span.fa-times.close:hover{
 }
 
 @media screen and (max-width: 480px) {
+	.nav {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.nav a:nth-child(2) {
+		margin: 2rem 0 0 0;
+	}
+
 	#wrapper {
 		justify-content: space-between;
 		padding: 0;
@@ -690,7 +705,12 @@ span.fa-times.close:hover{
 	}
 
 	.experience-position {
+		align-items: center;
 		flex-direction: column;
+	}
+
+	.experience-position h2 {
+		text-align: center;
 	}
 
 	.astreya {
