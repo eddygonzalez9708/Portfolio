@@ -269,9 +269,11 @@ span.fa-times.close {
 	font-family: FontAwesome;
 	font-size: 3rem;
 	height: 4rem;
+	margin: 1rem;
 	position: absolute;
-	right: .5rem;
-	top: .5rem;
+	right: 0;
+	text-align: center;
+	top: 0;
     width: 4rem;
 }
 
