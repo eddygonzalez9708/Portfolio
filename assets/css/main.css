@@ -4,6 +4,7 @@
 html, body, div, span, h1, h2, p, a, 
 img, ul, li, footer, header, section {
 	border: 0;
+	font-family: Arial, Helvetica, Verdana;
 	font-size: 62.5%;
 	margin: 0;
 	padding: 0;
@@ -17,6 +18,7 @@ html {
 }
 
 *, *:before, *:after {
+	letter-spacing: .2rem;
 	box-sizing: border-box;
 }
 
@@ -27,9 +29,8 @@ body {
 	background-repeat: no-repeat, no-repeat;
 	background-size: cover, cover;
 	background-position: bottom center, center center; 
-	font-family: monospace;
 	min-height: 100vh;
-	letter-spacing: .1rem;
+	/* letter-spacing: .1rem; */
 	text-transform: uppercase;
 	width: 100vw; 
 }
@@ -81,13 +82,13 @@ body.is-section-visible #footer {
 
 h1 {
 	font-size: 3rem;
-	font-weight: bold;
-	letter-spacing: .3rem;
+	/* font-weight: bold; */
+	/* letter-spacing: .3rem; */
 }
 
 h2 {
 	font-size: 2rem;
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 
 h1, h2 {
@@ -96,12 +97,9 @@ h1, h2 {
 }
 
 p {
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 1.6rem;
-	font-weight: bold;
 	line-height: 2;
 	margin: 1rem 0 0 0;
-	/* text-align: justify; */
 	text-align: left;
 	text-transform: initial;
 }
@@ -295,9 +293,7 @@ span.fa-times.close:hover{
 	background-color: #313131;
 	border-radius: .6rem;
 	color: #fff;
-	font-family: monospace;
-	font-weight: bold;
-	padding: .8rem; 
+	padding: 1rem; 
 }
 
 .nav a:hover {
@@ -307,23 +303,19 @@ span.fa-times.close:hover{
 .fa-caret-left:before {
 	content: "\f0d9";
 	font-family: FontAwesome;
-	font-size: 1.2rem;
 }
 
 .fa-caret-left:after {
-	font-size: 1.6rem;
 	margin: 0 0 0 1rem;
 }
 
 .fa-caret-right:before {
-	font-size: 1.6rem;
 	margin: 0 1rem 0 0;
 }
 
 .fa-caret-right:after {
 	content: "\f0da";
 	font-family: FontAwesome;
-	font-size: 1.2rem;
 }
 
 #about-nav .fa-caret-left:after {
@@ -379,8 +371,7 @@ span.fa-times.close:hover{
 .view-project {
 	background: #004F4F;
 	border-radius: .6rem;
-	font-weight: bold;
-	padding: 1.2rem;
+	padding: 1rem;
 }
 
 .project-links a {
@@ -406,10 +397,9 @@ span.fa-times.close:hover{
     color: #fff;
 	font: inherit;
 	font-size: 1.6rem;
-	font-weight: bold;
-	letter-spacing: .1rem;
+	/* letter-spacing: .1rem; */
 	outline: none;
-	padding: 1.2rem;
+	padding: 1rem;
 	transition: color 0.2s ease, border-color 0.2s ease;
 	text-transform: uppercase;
 	width: 100%;
@@ -435,7 +425,7 @@ span.fa-times.close:hover{
 
 .dropdown-content a {
 	color: black;
-	font-weight: bold;
+	/* font-weight: bold; */
 	margin: 0;
 	padding: 1rem;
 	text-decoration: none;
@@ -513,9 +503,7 @@ span.fa-times.close:hover{
 }
 
 .experience-company ul li {
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 1.6rem;
-	font-weight: bold;
 	line-height: 2;
 	margin: 0 0 1rem 0;
 	text-align: left;
@@ -644,7 +632,7 @@ span.fa-times.close:hover{
 	cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 930px) {
 	#home,
 	#wrapper section.active {
 		width: 80vw;
