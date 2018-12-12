@@ -293,7 +293,7 @@ span.fa-times.close:hover{
 
 .nav a {
 	background-color: #228989;
-	border-radius: .8rem;
+	border-radius: .6rem;
 	color: #fff;
 	font-family: monospace;
 	font-weight: bold;
@@ -378,7 +378,7 @@ span.fa-times.close:hover{
 
 .view-project {
 	background: #004F4F;
-	border-radius: .8rem;
+	border-radius: .6rem;
 	font-weight: bold;
 	padding: 1.2rem;
 }
@@ -402,7 +402,7 @@ span.fa-times.close:hover{
 .dropdown button {
 	background: #640000;
 	border: none;
-    border-radius: .8rem;
+    border-radius: .6rem;
     color: #fff;
 	font: inherit;
 	font-size: 1.6rem;
