@@ -451,6 +451,7 @@ span.fa-times.close:hover{
 
 #experience h2 {
 	color: #003535;
+	text-align: left; 
 }
 
 .experience-company {
@@ -501,10 +502,6 @@ span.fa-times.close:hover{
 .experience-position {
 	display: flex;
 	justify-content: space-between;
-}
-
-.experience-position h2 {
-	text-align: left;
 }
 
 .experience-company ul {
@@ -699,6 +696,10 @@ span.fa-times.close:hover{
 		margin: 0 0 2rem 0; 
 	}
 
+	#experience h2 {
+		text-align: center;
+	}
+
 	.experience-company {
 		align-items: center;
 		text-align: center;
@@ -707,10 +708,6 @@ span.fa-times.close:hover{
 	.experience-position {
 		align-items: center;
 		flex-direction: column;
-	}
-
-	.experience-position h2 {
-		text-align: center;
 	}
 
 	.astreya {
