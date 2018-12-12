@@ -346,6 +346,10 @@ span.fa-times.close:hover{
 	content: "Experience"
 }
 
+#contact-nav .fa-caret-right:before {
+	content: "Resume"
+}
+
 /* Project Section */ 
 
 .project {
