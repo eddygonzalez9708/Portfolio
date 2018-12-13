@@ -529,6 +529,7 @@ span.fa-times.close:hover{
 	border: 2px solid  #003535;
 	border-radius: .6rem;
 	font-size: 1.6rem;
+	outline: none;
 	padding: 1rem;
 	width: 45%; 
 }
@@ -539,6 +540,7 @@ span.fa-times.close:hover{
 	font-size: 1.6rem;
 	height: 40vh;
 	margin: 2rem 0 0 0; 
+	outline: none;
 	overflow: scroll;
 	padding: 1rem;
 	resize: none;
