@@ -386,7 +386,7 @@ span.fa-times.close:hover{
 .project-links a:hover {
 	color: #fff;
 	cursor: pointer;
-	opacity: .7;
+	opacity: .8;
 }
 
 .dropdown {
@@ -560,6 +560,11 @@ span.fa-times.close:hover{
 	font-size: 1.6rem;
 	margin: 0 2rem 0 0;
 	padding: 1rem;
+}
+
+.contact-button button:hover {
+	cursor: pointer;
+	opacity: .8;
 }
 
 .contact-button button:nth-child(2) {
