@@ -12,9 +12,7 @@ img, ul, li, footer, header, section {
 
 html {
 	box-sizing: border-box;
-	min-height: 100vh;
-	overflow-x: hidden;
-	overflow-y: scroll;
+	overflow: hidden;
 }
 
 *, *:before, *:after {
@@ -150,7 +148,7 @@ a:hover {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	height: 100vh;
 	justify-content: center;
 	padding: 2rem;
 	position: relative;
@@ -175,6 +173,7 @@ a:hover {
 }
 
 #wrapper section.active {
+	overflow-y: scroll;
 	padding: 4rem 4rem 0 4rem;
 }
 
