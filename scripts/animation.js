@@ -35,8 +35,9 @@
 
     $wrapper._show = function(id, initial) {
         let $section = $sections.filter('#' + id)
+        
         // No such section? Bail.
-        if ($section.length === 0) {
+        if (!$section.length) {
             return
         }
 
