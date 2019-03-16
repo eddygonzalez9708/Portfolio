@@ -13,6 +13,19 @@
                 $body.removeClass('is-preload')
             }, 100)
         }
+
+        if (location.hash === '' ||	location.hash === '#') {
+            $home.addClass('onSectionActive')
+            window.setTimeout(function() {
+                $home.removeClass('onSectionActive')
+            }, 500)
+
+            // Prevent default
+            event.preventDefault()
+            event.stopPropagation()
+
+            $wrapper._hide()
+        }
     })
 
     // Fix: Flexbox min-height bug on IE. 
@@ -287,7 +300,7 @@
 	// Hide sections
     $sections.hide()
 
-    // Initial section
+    // Initialize wrapper show function when condition results to true
     if (location.hash !== '' &&	location.hash !== '#') {
         $window.on('load', function() {
             $wrapper._show(location.hash.substr(1))
