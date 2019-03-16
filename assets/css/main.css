@@ -26,25 +26,22 @@ body {
 }
 
 #bg {
-	-moz-transform: scale(1.0);
-    -webkit-transform: scale(1.0);
-	-ms-transform: scale(1.0);
 	height: 100vh;
 	left: 0;
 	position: fixed;
 	top: 0;
-    width: 100%;
-	z-index: 1;
 	transform: scale(1.0);
+  width: 100%;
+	z-index: 1;
 }
 
 #bg:before, #bg:after {
-    content: '';
+  content: '';
 	display: block;
 	height: 100%;
 	left: 0;
-    position: absolute;
-    top: 0;
+  position: absolute;
+  top: 0;
 	width: 100%;
 }
 
@@ -55,17 +52,17 @@ body {
 	background-size: auto, 256px 256px;
 	transition: background-color 1s ease-in-out;
 	transition-delay: 0.75s;
-    z-index: 2;
+  z-index: 2;
 }
 
 #bg:after {
-    background-image: url('../../images/bg.jpg');
+  background-image: url('../../images/bg.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
-    background-size: cover;
+  background-size: cover;
 	transform: scale(1.125);
 	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-    z-index: 1;
+  z-index: 1;
 }
 
 body.is-preload #bg:before {
@@ -189,7 +186,6 @@ a:hover {
 
 #home .avatar img {
 	border-radius: 100%;
-	box-shadow: 0 0 0 1.5rem #ffffff;
 	display: block;
 	margin: 0 auto;
 	width: 25%;
