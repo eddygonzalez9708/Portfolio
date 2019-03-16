@@ -5,14 +5,12 @@
     <meta charset='utf-8' />
 	  <meta
 	    name='viewport'
-	    content='width=device-width, initial-scale=1, user-scalable=no'
-	  />
+	    content='width=device-width, initial-scale=1, user-scalable=no' />
 	  <link
 	    rel='icon'
-	    href='./images/head.png'
+	    href='./icons/favicon.png'
 	    type='image/png'
-	    sizes='16x16'
-	  />
+	    sizes='16x16' />
     <link rel='stylesheet' href='./assets/css/main.css' />
     <noscript>
       <link rel='stylesheet' href='./assets/css/noscript.css' />
@@ -22,12 +20,15 @@
   
   <body class='is-preload'>
     <!-- Wrapper Start -->
-    <div id='wrapper'>
+  	<div id='wrapper'>
 	    <!-- Home Section Start -->
 	    <div id='home'>
 	      <header>
 		      <span class='avatar'>
-			      <img id='my-image' src='./images/Edward_Gonzalez.jpg' alt='Picture of Edward Gonzalez' />
+						<img
+							id='my-image'
+							src='./images/me.jpg'
+							alt='Picture of Edward Gonzalez' />
 		      </span>
 		      <h1>Edward Gonzalez</h1>
 		      <h2>Software Engineer</h2>
@@ -37,24 +38,40 @@
 		    <footer>
 		      <ul class='links'>
 		        <li>
-		    	    <a href='#about' alt='About Page Link'>About</a>
+							<a
+								href='#about'
+								alt='About Page Link'>
+								About
+							</a>
 		    	  </li>
 		    	  <li>
-		    	    <a href='#projects' alt='Projects Page Link'>Projects</a>
+							<a
+								href='#projects'
+								alt='Projects Page Link'>
+								Projects
+							</a>
 		    	  </li>
 		    	  <li>
-		    	    <a href='#experience' alt='Experience Page Link'>Experience</a>
+							<a
+								href='#experience'
+								alt='Experience Page Link'>
+								Experience
+							</a>
 		    	  </li>
 		    	  <li>
-		    		<a href='#contact'>Contact</a>
+							<a
+								href='#contact'
+								alt='Contact Page Link'>
+								Contact
+							</a>
 		        </li>
 		    	<li>
-					<a
-					  href='./documents/Edward_Gonzalez_Resume.pdf'
-					  alt='Resume Page Link'
-					  target='_blank'>
-					  Resume
-					</a>
+						<a
+						  href='./documents/Edward_Gonzalez_Resume.pdf'
+						  alt='Resume Page Link'
+						  target='_blank'>
+						  Resume
+						</a>
 		    	</li>
 		      </ul>
 	      </footer>
@@ -64,28 +81,21 @@
 			<!-- About Section Start -->
 			<section id='about'> 
 	      <h1>About</h1>
-	      <p>Hello! I am Edward, a Software Engineer with a background in Information Technology. I am currently 
-					based in New York City.
-	      </p>
-	      <p>Throughout my career, I have enjoyed many experiences working in the IT industry. As a former IT Instructor 
-					at Per Scholas, I helped prepare students from underrepresented communities for their first technical job. 
-					As a Technician at Google, I was fortunate to work with some of the most talented Technicians and Engineers 
-					the world has to offer. However, as I continued to progress in my career and learnt new technologies, I 
-					decided to shift my area of focus to Full-Stack Web Development and Software Engineering.
-	      </p>
-	      <p>As a Software Engineer, I enjoy applying my skills and knowledge of Full-Stack Web Development and Computer 
-					Science to build attractive and dynamic user interfaces that enhance productivity and provide a better online 
-	      	presence for companies.
-	      </p>
-	      <p>When I am not working on a project, I use my spare time to learn more about popular libraries, frameworks, and 
-	      	other programming languages.
-	      </p>
-	      <p>I am always excited to hear from former colleagues, managers or interesting creative people, so feel free to 
-	      	contact me if you would like to connect.
+	      <p>Hello! I am Edward, a Software Engineer with a background in Information Technology. I am currently based in New York City.</p>
+	      <p>Throughout my career, I have enjoyed many experiences working in the IT industry. As a former IT Instructor at Per Scholas, I helped prepare students from underrepresented communities for their first technical job. As a Technician at Google, I was fortunate to work with some of the most talented Technicians and Engineers the world has to offer. However, as I continued to progress in my career and learn new technologies, I decided to shift my area of focus to Full-Stack Web Development and Software Engineering.</p>
+	      <p>As a Software Engineer, I enjoy applying my skills and knowledge of Full-Stack Web Development and Computer Science to build attractive and dynamic user interfaces that enhance productivity and provide a better online presence for companies.</p>
+	      <p>When I am not working on a project, I use my spare time to learn more about popular libraries, frameworks, and other programming languages.</p>
+	      <p>I am always excited to hear from former colleagues, managers or interesting creative people, so feel free to contact me if you would like to connect.
 				</p>
-				<div class='nav' id='about-nav'>
-				  <a class='fa-caret-left' href='#'></a>
-					<a class='fa-caret-right' href='#projects'></a>
+				<div
+					class='nav'
+					id='about-nav'>
+					<a
+						class='fa-caret-left'
+						href='#'></a>
+					<a
+						class='fa-caret-right'
+						href='#projects'></a>
 				</div>
 			</section>
 			<!-- About Section End-->
@@ -95,72 +105,38 @@
 				<h1>Projects</h1>
 				<div class='project'>
 					<div class='project-heading'>
-						<h2>Go To Recipes</h2>
-						<h2>In Progress</h2>
-					</div>
-					<p>Go To Recipes is a web application that allows users to search and 
-						share popular recipes. 
-					</p>
-					<p>Tech Stack: HTML, CSS, JavaScript, React, Redux, Firebase, Redux-Firebase 
-						and Redux-Firestore.
-					</p>
-					<div class='project-links'>
-						<a 
-						  class='view-project'
-							href='https://gotorecipes-client.netlify.com/'
-							alt='Go To Recipes Website Link'
-							target='_blank'>View Project
-						</a>
-						<div class='dropdown'>
-							<button
-								class='dropbtn recipes'
-								onclick='dropDown("recipes", event)'>View Source Code &#x25BE;
-							</button>
-							<div id='recipes' class='dropdown-content'>
-								<a 
-							    href='https://github.com/blkfltchr/gotorecipes'
-							  	alt='Front-End Code for Go To Recipes'
-									target='_blank'
-									style='border-bottom: none;'>Front-End
-							  </a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class='project'>
-					<div class='project-heading'>
 						<h2>Lambda Notes</h2>
 						<h2>In Progress</h2>
 					</div>
-					<p>Lambda Notes is a note taking web application that allows users to create, view, edit and delete their 
-						notes online.
-					</p>
-					<p>Tech Stack: HTML, CSS, JavaScript, React, Axios, Express, Cors, Helmet, Bcrypt, Morgan, Mongo DB, 
-						Mongoose and JWT.
-					</p>
+					<p>Lambda Notes is a note taking web application that allows users to create, view, edit and delete their notes online.</p>
+					<p>Tech Stack: HTML, CSS, JavaScript, React, Axios, Express, Cors, Helmet, Bcrypt, Morgan, Mongo DB, Mongoose and JWT.</p>
 					<div class='project-links'>
 			      <a 
 			      	class='view-project'
 			      	href='https://lambda-notes-client.netlify.com/'
 			      	alt='Lambda Notes Website Link'
-			      	target='_blank'>View Project
+							target='_blank'>
+							View Project
 						</a>
 						<div class='dropdown'>
 						  <button
 						  	class='dropbtn notes'
 						  	onclick='dropDown("notes", event)'>View Source Code &#x25BE;
 						  </button>
-							<div id='notes' class='dropdown-content'>
+							<div
+								id='notes'
+								class='dropdown-content'>
 							  <a 
 							  	href='https://github.com/eddygonzalez9708/front-end-project-week'
-							  	alt='Front-End Code for Lambda Notes'
-							  	target='_blank'>Front-End
+							  	alt='Front End Code for Lambda Notes'
+									target='_blank'>
+									Front-End
 							  </a>
 							  <a 
 							  	href='https://github.com/eddygonzalez9708/back-end-project-week'
-							  	alt='Back-End Code for Lambda Notes'
-							  	target='_blank'>Back-End
+							  	alt='Back End Code for Lambda Notes'
+									target='_blank'>
+									Back-End
 								</a>
 							</div>
 						</div>
@@ -172,43 +148,85 @@
 						<h2>Quizzer</h2>
 						<h2>In Progress</h2>
 					</div>
-					<p>Quizzer is a web application for teachers who wish to provide automated reminders and quizzes 
-						to their students emails.
-					</p>
-					<p>Tech Stack: HTML, CSS, JavaScript, React, Bcrypt, Python, Django, GraphQL, JWT, Send Grid, 
-						Twilio, and Stripe.
-					</p>
+					<p>Quizzer is a web application for teachers who wish to provide automated reminders and quizzes to their students emails.</p>
+					<p>Tech Stack: HTML, CSS, JavaScript, React, Bcrypt, Python, Django, GraphQL, JWT, Send Grid, Twilio, and Stripe.</p>
 					<div class='project-links'>
 						<a
 						  class='view-project'
 						  href='https://quizzercs10.herokuapp.com'
 						  alt='Quizzer Website Link'
-							target='_blank'>View Project
+							target='_blank'>
+							View Project
 						</a>
 						<div class='dropdown'>
 							<button
 								class='dropbtn quizzer'
 								onclick='dropDown("quizzer", event)'>View Source Code &#x25BE;
 							</button>
-							<div id='quizzer' class='dropdown-content'>
+							<div
+								id='quizzer'
+								class='dropdown-content'>
 								<a 
 									href='https://github.com/Lambda-School-Labs/CS10-quizzer/tree/master/client'
-									alt='Front-End Code for Quizzer'
-									target='_blank'>Front-End
+									alt='Front End Code for Quizzer'
+									target='_blank'>
+									Front-End
 								</a>
 								<a 
 								  href='https://github.com/Lambda-School-Labs/CS10-quizzer'
-								  alt='Back-End Code for Quizzer'
-									target='_blank'>Back-End
+								  alt='Back End Code for Quizzer'
+									target='_blank'>
+									Back-End
 								</a>
 							</div>
 						</div>
 					</div>
 				</div> 
 
-				<div class='nav' id='projects-nav'>
-					<a class='fa-caret-left' href='#about'></a>
-					<a class='fa-caret-right' href='#experience'></a>
+				<div class='project'>
+					<div class='project-heading'>
+						<h2>Go To Recipes</h2>
+						<h2>In Progress</h2>
+					</div>
+					<p>Go To Recipes is a web application that allows users to search and share popular recipes.</p>
+					<p>Tech Stack: HTML, CSS, JavaScript, React, Redux, Firebase, Redux-Firebase and Redux-Firestore.</p>
+					<div class='project-links'>
+						<a 
+							class='view-project'
+							href='https://gotorecipes-client.netlify.com/'
+							alt='Go To Recipes Website Link'
+							target='_blank'>
+							View Project
+						</a>
+						<div class='dropdown'>
+							<button
+								class='dropbtn recipes'
+								onclick='dropDown("recipes", event)'>View Source Code &#x25BE;
+							</button>
+							<div
+								id='recipes'
+								class='dropdown-content'>
+								<a 
+									href='https://github.com/blkfltchr/gotorecipes'
+									alt='Front End Code for Go To Recipes'
+									target='_blank'
+									style='border-bottom: none;'>
+									Front-End
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class='nav'
+					id='projects-nav'>
+					<a
+						class='fa-caret-left'
+						href='#about'></a>
+					<a
+						class='fa-caret-right'
+						href='#experience'></a>
 				</div>
 		  </section>
 			<!-- Projects Section End -->
@@ -221,7 +239,7 @@
 						href='https://lambdaschool.com/'
 						alt='Lambda School Logo'
 						target='_blank'>
-						<img src='./images/lambda_logo.png' />
+						<img src='./logos/lambda.png' />
 					</a>
 					<h2>Remote</h2>
 					<div class='experience-position'>
@@ -229,18 +247,10 @@
 						<h2>Current</h2>
 					</div>
 					<ul>
-						<li>Develop applications using HTML, CSS, JavaScript, Python, React, Redux, Node, Express, MongoDB, Django, 
-							Restful APIs, Bcrypt, and JWT.
-						</li>
-		        <li>Implement Responsive User Interface components using React, HTML, CSS, React-Strap, Material UI, 
-							and Styled Components.
-						</li>
-		        <li>Utilize agile software development and Git workflow for all code challenges and sprint 
-							projects.
-						</li>
-		        <li>Optimize code using popular data structures and algorithms to meet time and space complexity 
-							requirements.
-						</li>
+						<li>Develop applications using HTML, CSS, JavaScript, Python, Java, React, Redux, Node, Express, Knex, PostgreSQL, SQLite, MongoDB, Django, Restful APIs, Bcrypt, and JWT.</li>
+		        <li>Implement Responsive User Interface components using React, HTML, CSS, Reactstrap, Material-UI, and Styled Components.</li>
+		        <li>Utilize agile software development and Git workflow for all code challenges and sprint projects.</li>
+		        <li>Optimize code using popular data structures and algorithms to meet time and space complexity requirements.</li>
 					</ul>
 				</div>
 				
@@ -249,7 +259,7 @@
 						href='https://lambdaschool.com/'
 						alt='Lambda School Logo'
 						target='_blank'>
-						<img src='./images/lambda_logo.png' />
+						<img src='./logos/lambda.png' />
 					</a>
 					<h2>Remote</h2>
 					<div class='experience-position'>
@@ -257,15 +267,9 @@
 						<h2>Current</h2>
 					</div>
 					<ul>
-						<li>Lead a group of 8 students in Lambda School’s Computer Science course to help find bugs 
-							in their code and to help solidify their understanding of numerous programming topics.
-						</li>
-						<li>Organize daily stand-ups with my group via Zoom for live Q&A sessions and to receive 
-							weekly progress updates for sprint projects.
-						</li>
-						<li>Review pull requests on Git Hub and submit reviews with recommendations to add new 
-							features to an application or to fix errors in code.
-						</li>
+						<li>Lead a group of 8 students in Lambda School’s Computer Science course to help find bugs in their code and to help solidify their understanding of numerous programming topics.</li>
+						<li>Organize daily stand-ups with my group via Zoom to receive weekly progress updates for sprint projects and to answer questions about numerous programming topics covered in live lectures.</li>
+						<li>Merge pull requests on Git Hub after student's code has been reviewed and approved as a result of completing the Minimum Viable Product of an entire application or feature.</li>
 					</ul>
 				</div>
 				
@@ -275,9 +279,13 @@
 						href='http://astreya.com/'
 						alt='Astreya and Google Logo'
 						target='_blank'>
-						<img class='astreya_logo' src='./images/astreya_logo.png' />
+						<img
+							class='astreya_logo'
+							src='./logos/astreya.png' />
 						<h2>AT</h2>
-						<img class='google_logo' src='./images/google_logo.png' />
+						<img
+							class='google_logo'
+							src='./logos/google.png' />
 					</a>
 					<h2 class='astreya-location'>New York, New York</h2>
 					<div class='experience-position'>
@@ -285,18 +293,10 @@
 						<h2>2017 to 2018</h2>
 					</div>
 					<ul>
-						<li>Worked with a team full of talented Technicians in providing hardware support, operating system imaging, inventory maintenance, 
-							and video conferencing solutions to 5,000 or more users.
-						</li>
-						<li>Involved in many national and global Google projects such as working with contractors and teams in retrofitting video 
-							conferencing rooms, removing outdated equipment and installing new audio and visual products.
-						</li>
-						<li>Maintained effective communication lines between myself and upper management in order to prevent defects of pre-mass production 
-							hardware and software.
-						</li>
-						<li>Utilized Inventory Data Management software to maintain inventory accuracy and workflow, in addition to receiving and disposing 
-							assets.
-						</li>
+						<li>Worked with a team full of talented Technicians in providing hardware support, operating system imaging, inventory maintenance, and video conferencing solutions to 5,000 or more users.</li>
+						<li>Involved in many national and global Google projects such as working with contractors and teams in retrofitting video conferencing rooms, removing outdated equipment and installing new audio and visual products.</li>
+						<li>Maintained effective communication lines between myself and upper management in order to prevent defects of pre-mass production hardware and software.</li>
+						<li>Utilized Inventory Data Management software to maintain inventory accuracy and workflow, in addition to receiving and disposing assets.</li>
 					</ul>
 				</div>
 				
@@ -306,7 +306,7 @@
 						href='https://perscholas.org/'
 						alt='Per Scholas Logo'
 						target='_blank'>
-						<img src='./images/perscholas_logo.jpg' />
+						<img src='./logos/perscholas.jpg' />
 					</a>
 					<h2>Information Technology Instructor</h2>
 					<div class='experience-position'>
@@ -314,18 +314,10 @@
 						<h2>2016</h2>
 					</div>
 					<ul>
-						<li>Successfully developed efficient lesson plans and course material for the CompTIA A+ and Network+ exams that had resulted in 95% 
-							of my students to receive a passing grade after their first take.
-						</li>
-		        <li>Helped achieve employment opportunities in the Information Technology field for at least 50% of my students a week before 
-		        	graduation.
-		        </li>
-		        <li>Spent additional time with students before and after class to review complex technical concepts and to help prepare them for the 
-		        	virtual labs simulation sections on the CompTIA A+ and Network+ exams.
-		        </li>
-		        <li>Trained students on professional development and how to go about troubleshooting enormous technical challenges in a corporate 
-		        	environment.
-						</li>
+						<li>Successfully developed efficient lesson plans and course material for the CompTIA A+ and Network+ exams which resulted in 95% of my students to receive a passing grade after their first take.</li>
+		        <li>Helped achieve employment opportunities in the Information Technology field for at least 50% of my students a week before graduation.</li>
+		        <li>Spent additional time with students before and after class to review complex technical concepts and to help prepare them for the virtual labs simulation sections on the CompTIA A+ and Network+ exams.</li>
+		        <li>Trained students on professional development and troubleshooting technical challenges systematically within a corporate environment.</li>
 					</ul>
 				</div>
 	  
@@ -334,7 +326,7 @@
 						href='https://www.monroecollege.edu/'
 						alt='Monroe College Logo'
 						target='_blank'>
-						<img src='./images/monroe_logo.jpg' />
+						<img src='./logos/monroe.jpg' />
 					</a>
 					<h2>Information Technology Service Technician</h2>
 					<div class='experience-position'>
@@ -342,21 +334,22 @@
 						<h2>2014 to 2015</h2>
 					</div>
 		      <ul>
-		        <li>Troubleshot, repaired, and installed computer hardware devices, such as desktops, laptops, multifunction printers, copiers, 
-		      	  projectors, monitors, keyboards, mice, routers, switches, VoIP phones, power cables, and network cables.
+		        <li>Troubleshot, repaired, and installed computer hardware devices, such as desktops, laptops, multifunction printers, copiers, projectors, monitors, keyboards, mice, routers, switches, VoIP phones, power cables, and network cables.</li>
+		        <li>Provided technical service, advice, and solutions to 100 or more clients (e.g. teachers, students, and faculty staff) for common computer issues and software errors.</li>
+		        <li>Performed 10 or more software application installations a day (e.g. Microsoft Office Suite, Programming Development Environments, and CISCO Packet Tracer) for computer course labs.
 		        </li>
-		        <li>Provided technical service, advice, and solutions to 100 or more clients (e.g. teachers, students, and faculty staff) for 
-		      	  common computer issues and software errors.
-		        </li>
-		        <li>Performed 10 or more software application installations a day (e.g. Microsoft Office Suite, Programming Development Environments, 
-		      	  and CISCO Packet Tracer) for computer course labs.
-		        </li>
-		        <li>Managed and installed Windows and other application updates for 100 or more desktops.</li>
+		  			<li>Managed and installed Windows and other application updates for 100 or more desktops.</li>
 					</ul>
 				</div>
-		    <div id='experience-nav' class='nav'>
-		    	<a class='fa-caret-left' href='#projects'></a>
-		    	<a class='fa-caret-right' href='#contact'></a>
+				<div
+					id='experience-nav'
+					class='nav'>
+					<a
+						class='fa-caret-left'
+						href='#projects'></a>
+					<a
+						class='fa-caret-right'
+						href='#contact'></a>
 				</div>
 			</section>
 			<!-- Experience Section End -->
@@ -365,44 +358,44 @@
 	    <section id='contact'> 
 	    	<h1>Contact</h1>
 	    	<form
-	    		method="POST"
-	    		action="https://formspree.io/edward.gonzalez9708@gmail.com">
+	    		method='POST'
+	    		action='https://formspree.io/edward.gonzalez9708@gmail.com'>
 	    		<div class='contact-input'>
 	    		  <input
-	    				type="text"
-	    				name="name"
-	    				placeholder="Name"
-	    				maxlength="254"
+	    				type='text'
+	    				name='name'
+	    				placeholder='Name'
+	    				maxlength='254'
 	    				required />
 	    			<input
-	    				type="email"
-	    				name="email"
-	    				placeholder="Email"
-	    				maxlength="254"
+	    				type='email'
+	    				name='email'
+	    				placeholder='Email'
+	    				maxlength='254'
 	    				required /> 
 	    		</div>
 	    		<textarea
-	    			name="message"
-	    			placeholder="Message"
-	    			maxlength="1000"
+	    			name='message'
+	    			placeholder='Message'
+	    			maxlength='1000'
 						required></textarea>
 	    		<div class='contact-button'>
-	    			<button type="submit">SUBMIT</button>
+	    			<button type='submit'>SUBMIT</button>
 	    			<!-- <button>Reset</button> -->
 	    		</div>
 	    	</form>
-	    	<div id='contact-nav' class='nav'>
+				<div
+					id='contact-nav'
+					class='nav'>
 	    		<a
 	    			class='fa-caret-left'
 	    			href='#experience'
-	    			alt='Experience Page Link'>
-	    		</a>
+	    			alt='Experience Page Link'></a>
 	    		<a
 	    			class='fa-caret-right'
 	    			href='./documents/Edward_Gonzalez_Resume.pdf'
 	    			alt='Resume Page Link'
-	    			target='_blank'>
-	    		</a>
+	    			target='_blank'></a>
 	    	</div>
 	    </section>
 	    <!-- Contact Section End -->
@@ -414,8 +407,7 @@
 	    			<a
 	    				class='fa-twitter'
 	    				href='https://twitter.com/eddyjgonzalez'
-	    				target='_blank'>
-	    			</a>
+	    				target='_blank'></a>
 	        </li>
 	        <li>
 	    			<a
@@ -438,11 +430,15 @@
 		<!-- Wrapper End -->
 		
 		<!-- Image Modal -->
-		<div id='my-modal' class='modal'>
+		<div
+			id='my-modal'
+			class='modal'>
 			<!--  The Close Button -->
 			<span class='fa-times modal-close'></span>
 			<!-- Modal Content (My Image) -->
-			<img class='modal-content' id='img01' />
+			<img
+				class='modal-content'
+				id='img01' />
 		</div>
 
 		<!-- Background Image -->
