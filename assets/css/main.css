@@ -290,10 +290,14 @@ span.fa-times.close:hover{
 }
 
 .nav a {
-	background-color: #313131;
+	background: #004F4F;
 	border-radius: .6rem;
 	color: #fff;
 	padding: 1rem; 
+}
+
+.nav a:nth-child(2) {
+	background: #640000;
 }
 
 .nav a:hover {
@@ -373,7 +377,7 @@ span.fa-times.close:hover{
 }
 
 .view-project {
-	background: #004F4F;
+	background: #0d0c0c;
 	border-radius: .6rem;
 	padding: 1rem;
 }
@@ -395,7 +399,7 @@ span.fa-times.close:hover{
 }
 
 .dropdown button {
-	background: #640000;
+	background: #676d74;
 	border: none;
   border-radius: .6rem;
   color: #fff;
@@ -434,7 +438,7 @@ span.fa-times.close:hover{
 }
 
 .dropdown-content a:hover {
-	background-color: #B23636;
+	background-color: #746e67;
 }
 
 .show {
