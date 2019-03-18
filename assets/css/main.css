@@ -92,7 +92,7 @@ h2 {
 }
 
 h1, h2 {
-	color: #006464;
+	color: #2c2b2b;
 	margin: 2rem 0 0 0;
 	text-align: center;
 }
@@ -156,7 +156,7 @@ a:hover {
 /* Home */ 
 
 #wrapper section.active, #home {
-	background: #ffffff;
+	background: #dddada;
 	border-radius: 4px;
 	cursor: default;
 	opacity: .95;
@@ -196,7 +196,7 @@ a:hover {
 }
 
 #home .avatar:before {
-	background: #c8cccf;
+	background: #abaaaa;
 	content: '';
 	display: block;
 	height: .2rem;
@@ -208,7 +208,7 @@ a:hover {
 }
 
 #home .avatar:after {
-	background: #c8cccf;
+	background: #abaaaa;
 	content: '';
 	display: block;
 	height: .2rem;
@@ -220,13 +220,13 @@ a:hover {
 }
 
 .links {
-	color: #640000;
+	color: #424141;
 	display: flex;
 	font-size: 1.8rem;
 	font-weight: bold;
 	justify-content: space-evenly;
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 	margin: 2rem 0 0 0;
 }
 
@@ -274,7 +274,7 @@ span.fa-times.close {
 	right: 0;
 	text-align: center;
 	top: 0;
-    width: 4rem;
+  width: 4rem;
 }
 
 span.fa-times.close:hover{
@@ -290,10 +290,14 @@ span.fa-times.close:hover{
 }
 
 .nav a {
-	background-color: #313131;
+	background: #004F4F;
 	border-radius: .6rem;
 	color: #fff;
 	padding: 1rem; 
+}
+
+.nav a:nth-child(2) {
+	background: #640000;
 }
 
 .nav a:hover {
@@ -357,7 +361,6 @@ span.fa-times.close:hover{
 }
 
 .project h2 {
-	color: #003535;
 	margin: 0
 }
 
@@ -373,7 +376,7 @@ span.fa-times.close:hover{
 }
 
 .view-project {
-	background: #004F4F;
+	background: #0d0c0c;
 	border-radius: .6rem;
 	padding: 1rem;
 }
@@ -381,6 +384,7 @@ span.fa-times.close:hover{
 .project-links a {
 	height:100%;
 	margin: 0 2rem 0 0;
+	text-align: center;
 }
 
 .project-links a:hover {
@@ -395,10 +399,10 @@ span.fa-times.close:hover{
 }
 
 .dropdown button {
-	background: #640000;
+	background: #676d74;
 	border: none;
-    border-radius: .6rem;
-    color: #fff;
+  border-radius: .6rem;
+  color: #fff;
 	font: inherit;
 	font-size: 1.6rem;
 	outline: none;
@@ -434,7 +438,7 @@ span.fa-times.close:hover{
 }
 
 .dropdown-content a:hover {
-	background-color: #B23636;
+	background-color: #746e67;
 }
 
 .show {
@@ -445,8 +449,7 @@ span.fa-times.close:hover{
 /* Experience Section */ 
 
 #experience h2 {
-	color: #003535;
-	text-align: left; 
+	text-align: left;
 }
 
 .experience-company {
@@ -554,7 +557,7 @@ span.fa-times.close:hover{
 }
 
 .contact-button button {
-	background: #004F4F;
+	background: #0d0c0c;
 	border-radius: .6rem;
 	color: #fff;
 	font-size: 1.6rem;
@@ -631,7 +634,7 @@ span.fa-times.close:hover{
 	right: 0;
 	text-align: center;
 	top: 0;
-    width: 4rem;
+  width: 4rem;
 }
 
 .modal-close:hover,
@@ -721,6 +724,18 @@ span.fa-times.close:hover{
 
 	.astreya h2 {
 		margin: 0 0 2rem 0; 
+	}
+
+	.contact-input {
+		flex-direction: column;
+	}
+
+	.contact-input input {
+		width: 100%;
+	}
+
+	.contact-input input:nth-child(2) {
+		margin: 2rem 0 0 0;
 	}
 
 	#footer {
