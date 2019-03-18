@@ -361,7 +361,6 @@ span.fa-times.close:hover{
 }
 
 .project h2 {
-	color: #003535;
 	margin: 0
 }
 
@@ -385,6 +384,7 @@ span.fa-times.close:hover{
 .project-links a {
 	height:100%;
 	margin: 0 2rem 0 0;
+	text-align: center;
 }
 
 .project-links a:hover {
@@ -449,8 +449,7 @@ span.fa-times.close:hover{
 /* Experience Section */ 
 
 #experience h2 {
-	color: #003535;
-	text-align: left; 
+	text-align: left;
 }
 
 .experience-company {
@@ -558,7 +557,7 @@ span.fa-times.close:hover{
 }
 
 .contact-button button {
-	background: #004F4F;
+	background: #0d0c0c;
 	border-radius: .6rem;
 	color: #fff;
 	font-size: 1.6rem;
@@ -725,6 +724,18 @@ span.fa-times.close:hover{
 
 	.astreya h2 {
 		margin: 0 0 2rem 0; 
+	}
+
+	.contact-input {
+		flex-direction: column;
+	}
+
+	.contact-input input {
+		width: 100%;
+	}
+
+	.contact-input input:nth-child(2) {
+		margin: 2rem 0 0 0;
 	}
 
 	#footer {
