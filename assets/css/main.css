@@ -196,7 +196,7 @@ a:hover {
 }
 
 #home .avatar:before {
-	background: #c8cccf;
+	background: #abaaaa;
 	content: '';
 	display: block;
 	height: .2rem;
@@ -208,7 +208,7 @@ a:hover {
 }
 
 #home .avatar:after {
-	background: #c8cccf;
+	background: #abaaaa;
 	content: '';
 	display: block;
 	height: .2rem;
@@ -225,8 +225,8 @@ a:hover {
 	font-size: 1.8rem;
 	font-weight: bold;
 	justify-content: space-evenly;
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 	margin: 2rem 0 0 0;
 }
 
@@ -274,7 +274,7 @@ span.fa-times.close {
 	right: 0;
 	text-align: center;
 	top: 0;
-    width: 4rem;
+  width: 4rem;
 }
 
 span.fa-times.close:hover{
@@ -397,8 +397,8 @@ span.fa-times.close:hover{
 .dropdown button {
 	background: #640000;
 	border: none;
-    border-radius: .6rem;
-    color: #fff;
+  border-radius: .6rem;
+  color: #fff;
 	font: inherit;
 	font-size: 1.6rem;
 	outline: none;
@@ -631,7 +631,7 @@ span.fa-times.close:hover{
 	right: 0;
 	text-align: center;
 	top: 0;
-    width: 4rem;
+  width: 4rem;
 }
 
 .modal-close:hover,
