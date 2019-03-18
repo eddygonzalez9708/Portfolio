@@ -92,7 +92,7 @@ h2 {
 }
 
 h1, h2 {
-	color: #006464;
+	color: #2c2b2b;
 	margin: 2rem 0 0 0;
 	text-align: center;
 }
@@ -156,7 +156,7 @@ a:hover {
 /* Home */ 
 
 #wrapper section.active, #home {
-	background: #ffffff;
+	background: #dddada;
 	border-radius: 4px;
 	cursor: default;
 	opacity: .95;
@@ -220,7 +220,7 @@ a:hover {
 }
 
 .links {
-	color: #640000;
+	color: #424141;
 	display: flex;
 	font-size: 1.8rem;
 	font-weight: bold;
