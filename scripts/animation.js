@@ -4,6 +4,8 @@
     let $wrapper = $('#wrapper')
     let $home = $('#home')
     let $footer = $('#footer')
+    let $projects = $('#projects')
+    let $content= $('.dropdown-content')
     let $sections = $wrapper.children('section')
 
     let delay = 325
@@ -43,7 +45,7 @@
 			setTimeout(function() {
 				$currentSection.hide()
 
-				$section.show()
+                $section.show()
 
 				setTimeout(function() {
                     $section.addClass('active')
@@ -81,9 +83,9 @@
         }
     }
 
+    // This code block will hide a section in the div wrapper
     $wrapper._hide = function() {
         let $section = $sections.filter('.active')
-
         if (!$body.hasClass('is-section-visible')) {
             return
         }
@@ -129,6 +131,16 @@
             }, 25)
         }, delay)
     }
+
+    // This code block hides active dropdown content divs and sets the border radius of dropdown buttons to .8rem when the body is clicked on
+    $content._hide  = function() {
+        for (let x = 0; x < $content.length; x++) {
+            if ( $content[x].classList.contains('show')) {
+                $content[x].classList.remove('show')
+                $('.' + $content[x].id)[0].style.borderRadius = '.8rem'
+            }
+        }
+    }
     
     // This code block attaches an close button to each section
 	$sections.each(function() {
@@ -138,52 +150,46 @@
 			.on('click', function() {
 				location.hash = ''
             })
-        
-        // Prevent clicks from inside section from bubbling
-		$this.on('click', function(event) {
-            if ($this[0].id !== 'projects') {
-                event.stopPropagation()
-            }
-        })
     })
     
-    // When the body is clicked while a section is visible the web page will return home
+    // When the body is clicked on while a section is visible the web page will return home
     $body.on('click', function(event) {
         if ($body.hasClass('is-section-visible')) {
             if (event.target.id === 'wrapper') {
                 location.hash = ''
+                if ($projects.hasClass('active')) {
+                    $content._hide()
+                }
             }
         }
     })
     
     // When the ESC key is clicked on while a section is visible the web page will return home
     $window.on('keyup', function(event) {
-        switch (event.keyCode) {
-            case 27:
-                if ($body.hasClass('is-section-visible')) {
-                    location.hash = ''
+        if (event.keyCode === 27) {
+            if ($body.hasClass('is-section-visible')) {
+                location.hash = ''
+                if ($projects.hasClass('active')) {
+                    $content._hide()
                 }
-                break
-            default:
-                break
+            } 
         }
     })
 
     // This code block will execute when the hash changes
-    $window.on('hashchange', function(event) {
+    $window.on('hashchange', function() {
         if (location.hash === '' ||	location.hash === '#') {
             $home.addClass('onSectionActive')
             window.setTimeout(function() {
                 $home.removeClass('onSectionActive')
             }, 500)
-
             $wrapper._hide()
         } else if ($sections.filter(location.hash).length > 0) {
             $wrapper._show(location.hash.substr(1))
         }
     })
 
-	// The line hides all sections
+	// This line hides all sections
     $sections.hide()
 
     // This code block initializes the application on page load to show the home page or other section based on certain conditions met
@@ -197,7 +203,6 @@
             window.setTimeout(function() {
                 $home.removeClass('onSectionActive')
             }, 500)
-
             $wrapper._hide()
         } else {
             $wrapper._show(location.hash.substr(1))
