@@ -182,6 +182,7 @@ a:hover {
 #home .avatar {
 	position: relative;
 	display: block;
+	width: 100%
 }
 
 #home .avatar img {
