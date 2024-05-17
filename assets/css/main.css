@@ -189,6 +189,7 @@ a:hover {
 	position: relative;
 	width: 100vw;
 	z-index: 3;
+	margin: 20px;
 }
 
 /* Home */
