@@ -356,6 +356,10 @@ span.fa-times.close:hover {
 	font-family: FontAwesome;
 }
 
+#about {
+	margin: 2rem;
+}
+
 #about-nav .fa-caret-left:after {
 	content: "Home"
 }
