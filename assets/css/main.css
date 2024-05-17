@@ -726,10 +726,6 @@ span.fa-times.close:hover {
 		margin: 2rem 0 0 0;
 	}
 
-	#wrapper {
-		justify-content: space-between;
-	}
-
 	#home,
 	#wrapper section.active {
 		width: 100%;
