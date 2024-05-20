@@ -731,6 +731,13 @@ span.fa-times.close:hover {
 		width: 100%;
 	}
 
+	#about,
+	#experience,
+	#projects,
+	#contact {
+		height: 85%;
+	}
+
 	.project-heading {
 		flex-direction: column;
 	}
